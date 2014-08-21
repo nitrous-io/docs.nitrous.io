@@ -1,6 +1,5 @@
 ---
 layout: docs
-layout: docs
 title: Styleguide
 published: true
 ---

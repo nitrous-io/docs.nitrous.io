@@ -1652,6 +1652,7 @@ h1[id] {
 
 .sub-nav li {
   display: inline-block;
+  padding-bottom: 13px;
 }
 
 .sub-nav li a {
@@ -1672,7 +1673,7 @@ h1[id] {
 
 .sub-nav li.active {
   color: #222;
-  border-bottom: 2px solid #d8d8d8;
+  border-bottom: 3px solid #d8d8d8;
   padding-bottom: 10px;
 }
 
