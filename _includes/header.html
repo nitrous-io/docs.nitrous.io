@@ -1,10 +1,10 @@
 <div class="sub-nav">
-    <h2><a href="/overview/">Documentation</a></h2>
+    <h2><a href="/">Documentation</a></h2>
 
     <ul>
+      <li {% if page.mitem contains 'getting-started' %} class="active" {% endif %}><a href="/">Getting Started</a></li>
       <li {% if page.mitem contains 'overview' %} class="active" {% endif %}><a href="/overview">Overview</a></li>
-      <li {% if page.mitem contains 'getting-started' %} class="active" {% endif %}><a href="/getting-started">Getting Started</a></li>
-      <li {% if page.mitem contains 'cli' %} class="active" {% endif %}><a href="/cli">CLI</a></li>
-      <li {% if page.mitem contains 'migration' %} class="active" {% endif %}><a href="/migration">Migration</a></li>
+      <li {% if page.mitem contains 'tutorials' %} class="active" {% endif %}><a href="/tutorials">Tutorials</a></li>
+      <li {% if page.mitem contains 'toolbelt' %} class="active" {% endif %}><a href="/toolbelt">Toolbelt</a></li>
     </ul>
 </div>
