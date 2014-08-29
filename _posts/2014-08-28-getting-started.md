@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: getting_started
 title: Getting Started with Your Nitrous.IO Environment
 published: true
 mitem: getting-started
