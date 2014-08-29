@@ -78,11 +78,11 @@ This is where your Data will be stored - isolating your Data from Compute. You c
 Now we can create a new Container, connect the Data Volume we created to the Container and link the appropriate port from the Container out to the host. Container linking also allows you to connect various microservices in your application stack to one another.
 
 {% highlight bash %}
-    nitro create hello -s ghost -i dockerfile/ghost -p 80:2368 -v data:/ghost-overide
+    nitro create hello -s CONTAINER_NAME -i dockerfile/ghost -p 80:2368 -v data:/ghost-overide
 {% endhighlight %}
 
 
-Using the command above, a Container named ‘ghost’ will be created using the Image dockerfile/ghost with Ports forwarded 80:2368 and Data Volume mounted.
+Using the command above, a Container will be created using the Image dockerfile/ghost with Ports forwarded 80:2368 and Data Volume mounted.
 
 
 #### Step 7: Connect to the Container via shell.
@@ -90,7 +90,7 @@ Using the command above, a Container named ‘ghost’ will be created using the
 We can ensure that the Container came up properly by accessing it.
 
 {% highlight bash %}
-    nitro shell ghost
+    nitro shell CONTAINER_NAME
 {% endhighlight %}
 
 Now we can access the Ghost Blog locally within the Container:
