@@ -25,12 +25,17 @@
       </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse nav navbar-nav navbar-right" role="navigation">
       <ul class="nav navbar-nav">
-        <li>
+        <li {% if page.mitem contains 'overview' %} class="active" {% endif %}>
           <a href="/" onclick="ga('send', 'event', 'Navbar', 'Docs', 'Expo');">Overview</a>
         </li>
-        <li>
+        <li {% if page.mitem contains 'docs' %} class="active" {% endif %}>
           <a href="/docs" onclick="ga('send', 'event', 'Navbar',
-            'Docs', 'Expo');">Documentation</a></li>
+            'Docs', 'Expo');">Documentation</a>
+        </li>
+        <li {% if page.mitem contains 'download' %} class="active" {% endif %}>
+          <a href="nitrous-toolbelt.pkg" onclick="ga('send', 'event', 'Navbar',
+            'Docs', 'Expo');">Download</a>
+        </li>
       </ul>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>

@@ -4,7 +4,7 @@ email: support@nitrous.io
 permalink: /docs/:title
 description: "Nitrous.IO Documentation"
 baseurl: ""
-url: "http://dev.nitrous.io"
+url: "http://docs.nitrous.io"
 twitter_username: nitrousio
 github_username:  nitrous-io
 
