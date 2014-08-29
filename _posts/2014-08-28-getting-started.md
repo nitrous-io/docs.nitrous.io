@@ -22,9 +22,9 @@ nitro login
 
 #### Step 2b: Optional - for Staging Only.
 
-{% highlight bash %}
 Set the `NITRO_API_URL` environment variable.
 
+{% highlight bash %}
     export NITRO_API_URL=https://pro.nitrous.io
 {% endhighlight %}
 
