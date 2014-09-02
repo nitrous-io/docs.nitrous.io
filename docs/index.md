@@ -6,5 +6,5 @@ mitem: docs
 ---
 
 * [Getting Started](/docs/getting-started)
-* [Nitrous Toolbelt](/docs/toolbelt)
+* [Installing the Nitrous Toolbelt](/docs/toolbelt)
 * [Migrating Your App to Nitrous.IO](/docs/migration)
