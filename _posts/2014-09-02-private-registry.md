@@ -2,7 +2,6 @@
 layout: private-registry
 title: Pulling an existing Docker Image from your Private Repository
 published: true
-mitem: private-registry
 ---
 
 ### Pulling an existing Image from your Private Registry
@@ -10,7 +9,7 @@ mitem: private-registry
 
 #### Overview
 
-This document will walk you through how to set up a a Container from an existing Docker image in your private registry. 
+This document will walk you through how to set up a a Container from an existing Docker image in your private registry.
 This guide assumes that you have the Nitro CLI installed and a Host created on Nitrous.IO.
 
 
@@ -23,7 +22,7 @@ nitro registry:login HOST_NAME
 You will be prompted for your Username, Password, Email and Registry.
 
 
-#### Step 2: Now that you are logged in, you can pull an existing Image from your Private Registry.  
+#### Step 2: Now that you are logged in, you can pull an existing Image from your Private Registry.
 
 {% highlight bash %}
 nitro images:pull HOST_NAME USERNAME/REPO_NAME
@@ -58,4 +57,4 @@ Find the URL to your host and point your browser to your application.
     nitro hosts:inspect HOST_NAME
 {% endhighlight %}
 
-You have now successfully created a Container using an existing Image pulled from a Private Registry. 
+You have now successfully created a Container using an existing Image pulled from a Private Registry.
