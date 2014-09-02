@@ -35,6 +35,6 @@ nitro images:pull HOST_NAME USERNAME/REPO_NAME
 
 #### Step 3: Verify 
 
-You can run `nitro images <host>` to verify that your image is now available on the host.  
+You can run `nitro images HOST_NAME` to verify that your image is now available on the host.  
 
 You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Guide]({{site.url}}docs/getting-started/).
