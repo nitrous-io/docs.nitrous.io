@@ -10,7 +10,8 @@ mitem: private-registry
 
 #### Overview
 
-This will quickly walk you through running a Container using an existing Image pulled from your Private Registry. This guide assumes that you have the Nitro CLI installed and a Host created. If you haven't, please check out the Getting Started guide. 
+This document will walk you through how to set up a a Container from an existing Docker image in your private registry. 
+This guide assumes that you have the Nitro CLI installed and a Host created on Nitrous.IO.. 
 
 
 #### Step 1: Log in to your Docker Private Registry or any Private Registry you may use through the Nitro CLI.
@@ -58,4 +59,3 @@ Find the URL to your host and point your browser to your application.
 {% endhighlight %}
 
 You have now successfully created a Container using an existing Image pulled from a Private Registry. 
-
