@@ -1,60 +1,40 @@
 ---
-layout: private-registry
+layout: docs
 title: Pulling an existing Docker Image from your Private Repository
 published: true
+mitem: private-registry
 ---
 
-### Pulling an existing Image from your Private Registry
+### Pulling an existing Docker Image from your Private Registry
 
 
 #### Overview
 
-This document will walk you through how to set up a a Container from an existing Docker image in your private registry.
-This guide assumes that you have the Nitro CLI installed and a Host created on Nitrous.IO.
+This document will walk you through how to pull an existing Docker image from your private registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed]({{site.url}}docs/toolbelt/) and a [Host created on Nitrous.IO]({{site.url}}docs/getting-started/).
 
 
-#### Step 1: Log in to your Docker Private Registry or any Private Registry you may use through the Nitro CLI.
+#### Step 1: Log in to your Private Registry via the Nitro CLI
 
 {% highlight bash %}
 nitro registry:login HOST_NAME
 {% endhighlight %}
 
-You will be prompted for your Username, Password, Email and Registry.
+You will be prompted for your Username, Password, Email and Registry URL.
+
+Note: Currently, Nitrous.IO supports [Docker Hub](hub.docker.com) and [Quay.io](quay.io).
 
 
-#### Step 2: Now that you are logged in, you can pull an existing Image from your Private Registry.
+#### Step 2: Pull an existing Image from your Private Registry.  
+
+Now that you are logged in, you can simply pull in any private or public image from your repository via the `nitro images:pull` command.
 
 {% highlight bash %}
 nitro images:pull HOST_NAME USERNAME/REPO_NAME
 {% endhighlight %}
 
 
-#### Step 3: Create a Container using the Image you have just pulled.
+#### Step 3: Verify 
 
-{% highlight bash %}
-nitro create HOST_NAME -i USERNAME/REPO_NAME -s CONTAINER_NAME -p 4000:4000
-{% endhighlight %}
+You can run `nitro images <host>` to verify that your image is now available on the host.  
 
-
-#### Step 4: Connect to the Container via shell.
-
-{% highlight bash %}
-nitro shell CONTAINER_NAME
-{% endhighlight %}
-
-Now you can access the contents of the Container to ensure that it is running properly.
-
-{% highlight bash %}
-curl localhost:4000
-{% endhighlight %}
-
-
-#### Step 5: Access the Service on Web.
-
-Find the URL to your host and point your browser to your application.
-
-{% highlight bash %}
-    nitro hosts:inspect HOST_NAME
-{% endhighlight %}
-
-You have now successfully created a Container using an existing Image pulled from a Private Registry.
+You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Guide]({{site.url}}docs/getting-started/).
