@@ -1,5 +1,5 @@
 ---
-layout: getting_started
+layout: docs
 title: Getting Started with Your Nitrous.IO Environment
 published: true
 mitem: getting-started
@@ -11,7 +11,7 @@ mitem: getting-started
 
 This will quickly walk you through setting up a Ghost Blog on the new Nitrous.IO. There are a lot more parameters than those covered in the commands below. You can type any of the commands in the CLI without parameters to get detailed information about the various options.
 
-#### Step 1: Download and run the Nitrous.IO Command Line Interface (CLI) Installer Package for your operating system.
+#### Step 1: Download and run the [Nitrous.IO Command Line Interface (CLI) Installer Package] (https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) for your operating system.
 
 
 #### Step 2: Authenticate with your Nitrous.IO credentials.
@@ -107,4 +107,6 @@ Find the URL to your host and point your browser to your new Ghost Blog.
     nitro hosts:inspect hello
 {% endhighlight %}
 
-You have now successfully set up a Ghost Blog.
+You have now successfully set up a Ghost Blog. 
+
+Check out the [Private Repository Tutorial] ({{site.url}}docs/private-registry/) to pull an existing Docker Image from your Private Repository. 
