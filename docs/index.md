@@ -7,6 +7,6 @@ mitem: docs
 
 * [Getting Started](/docs/getting-started)
 * [Installing the Nitrous Toolbelt](/docs/toolbelt)
-* [Pulling an existing Docker Image from your Private Repository](/docs/private-repository/)
+* [Pulling an existing Docker Image from your Private Registry](/docs/private-registry/)
 * [Setting up a new Rails Application](/docs/rails-app)
 * [Migrating Your App to Nitrous.IO](/docs/migration)
