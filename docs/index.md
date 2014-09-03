@@ -20,9 +20,15 @@ mitem: docs
       </a>
     </li>
     <li>
-      <a href="/docs/private-repo">
+      <a href="/docs/private-registry/">
         <i class="fa fa-file-text-o"></i>
         Pulling an existing Docker Image from your Private Repository
+      </a>
+    </li>
+    <li>
+      <a href="/docs/teams/">
+        <i class="fa fa-file-text-o"></i>
+          Team and Sharing Overview
       </a>
     </li>
   </ul>
