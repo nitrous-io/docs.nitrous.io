@@ -5,7 +5,7 @@ published: true
 mitem: docs
 ---
 
-<h1>Getting Started</h1>
+<h2>Getting Started</h2>
   <ul>
     <li>
       <a href="/docs/getting-started">
@@ -27,7 +27,7 @@ mitem: docs
     </li>
   </ul>
 
-<h1>Tutorials</h1>
+<h2>Tutorials</h2>
   <ul class="toc">
     <li>
       <a href="/docs/rails-app">
@@ -37,7 +37,7 @@ mitem: docs
     </li>
   </ul>
 
-<h1>Migration</h1>
+<h2>Migration</h2>
   <ul class="toc">
     <li>
       <a href="/docs/migration">
