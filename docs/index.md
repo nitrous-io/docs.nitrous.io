@@ -16,7 +16,7 @@ mitem: docs
     <li>
       <a href="/docs/toolbelt">
         <i class="fa fa-file-text-o"></i>
-        Nitrous Toolbelt
+        Installing the Nitrous Toolbelt
       </a>
     </li>
     <li>
