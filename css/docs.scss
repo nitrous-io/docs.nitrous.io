@@ -28,6 +28,10 @@ body {
   /* For scrollspy */
 }
 
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
+}
 /* Keep code small in tables on account of limited space */
 
 .table code {
@@ -1738,12 +1742,9 @@ h5.note {
     border-bottom: 1px solid #ddd;
     padding: 1.4rem 0 1rem 0;
   }
-  h1:first-child, h2:first-child{
+  h1:first-child, h2:first-child, h3:first-child{
     padding: 0 0 1rem 0;
     margin: 0 0 1rem 0;
-  }
-  h3 {
-    padding: 1rem 0;
   }
   h4, h5, h6 {
     margin-top: 2rem;
@@ -1756,7 +1757,6 @@ h5.note {
 .menu ul {
   list-style: none;
   padding-left: 0;
-  max-width: 480px;
   margin-left: -8px;
   li {
     a {

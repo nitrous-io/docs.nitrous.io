@@ -25,12 +25,6 @@ mitem: docs
         Pulling an existing Docker Image from your Private Repository
       </a>
     </li>
-    <li>
-      <a href="/docs/getting-started)">
-        <i class="fa fa-file-text-o"></i>
-        Getting Started
-      </a>
-    </li>
   </ul>
 
 <h1>Tutorials</h1>
