@@ -5,7 +5,6 @@ published: true
 mitem: docs
 ---
 
-<<<<<<< HEAD
 <h1>Getting Started</h1>
   <ul>
     <li>
@@ -53,10 +52,3 @@ mitem: docs
       </a>
     </li>
   </ul>
-=======
-* [Getting Started](/docs/getting-started)
-* [Installing the Nitrous Toolbelt](/docs/toolbelt)
-* [Pulling an existing Docker Image from your Private Registry](/docs/private-registry/)
-* [Setting up a new Rails Application](/docs/rails-app)
-* [Migrating Your App to Nitrous.IO](/docs/migration)
->>>>>>> 72927f5557bb0d3d9338e8601c0e10cfee1be074
