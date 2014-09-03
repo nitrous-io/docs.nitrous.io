@@ -119,4 +119,4 @@ You have now successfully set up a Ghost Blog.
 
 ## Recommended Articles
 
-Check out the [Private Repository Tutorial]({{site.url}}docs/private-registry/) to pull an existing Docker Image from your Private Repository.
+Check out the [Private Repository Tutorial]({{site.url}}/docs/private-registry/) to pull an existing Docker Image from your Private Repository.
