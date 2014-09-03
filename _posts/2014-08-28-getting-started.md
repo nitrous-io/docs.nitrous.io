@@ -78,7 +78,7 @@ $ nitro volumes:create HOST_NAME data
 Now we can create a new Container, connect the Data Volume we created to the Container and link the appropriate port from the Container out to the host. Container linking also allows you to connect various microservices in your application stack to one another.
 
 {% highlight bash %}
-$ nitro create HOST_NAME -s CONTAINER_NAME -i dockerfile/ghost -p 80:2368 -v data:/ghost-overide
+$ nitro create HOST_NAME -s CONTAINER_NAME -i dockerfile/ghost -p 0.0.0.0:80:2368 -v data:/ghost-overide
 {% endhighlight %}
 
 Using the command above, a Container will be created using the Image dockerfile/ghost with Ports forwarded 80:2368 and Data Volume mounted.
