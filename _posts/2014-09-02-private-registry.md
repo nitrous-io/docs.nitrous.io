@@ -1,5 +1,5 @@
 ---
-layout: private-registry
+layout: docs
 title: Pulling an existing Docker Image from your Private Repository
 published: true
 ---
