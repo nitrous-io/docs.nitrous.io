@@ -56,6 +56,15 @@ size
     nitro images:pull hello dockerfile/ghost
 {% endhighlight %}
 
+If your Image is successfully pulled, you should see the following:
+
+````
+$ nitro images:pull hello dockerfile/ghost
+Pulling image 'dockerfile/ghost' to 'hello'...
+ID                   Slug                Tag       Name   Created                                 Size   Virtual Size
+aad91b0a4e8311738f   dockerfile/ghost    latest           2014-09-03 00:08:20.995835 +0000 UTC    0      602771479
+```
+
 
 Step 4b: Alternately, you can also build your own DockerFile if you have an existing copy.
 
