@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started with Your Nitrous.IO Environment
 published: true
-mitem: getting-started
+mitem: docs
 ---
 
 ### Getting Started with Your Nitrous.IO Environment by Setting Up a Ghost Blog.
@@ -17,7 +17,7 @@ This will quickly walk you through setting up a Ghost Blog on the new Nitrous.IO
 #### Step 2: Authenticate with your Nitrous.IO credentials.
 
 {% highlight bash %}
-nitro login
+$ nitro login
 {% endhighlight %}
 
 #### Step 2b: Optional - for Staging Only.
@@ -25,51 +25,51 @@ nitro login
 Set the `NITRO_API_URL` environment variable.
 
 {% highlight bash %}
-    export NITRO_API_URL=https://pro.nitrous.io
+$ export NITRO_API_URL=https://pro.nitrous.io
 {% endhighlight %}
 
 #### Step 3: Create a new Host. Specify size, region and slug (a unique name).
 
 {% highlight bash %}
-    nitro hosts:create 512mb -r sfo -s hello
+$ nitro hosts:create 512mb -r sfo -s hello
 {% endhighlight %}
 
 
 Or issue the command without parameters to see all the options.
 
 {% highlight bash %}
-nitro hosts:create
-  Usage: nitro hosts:create <size>
+$ nitro hosts:create
+    Usage: nitro hosts:create <size>
 
-create a new host
+  create a new host
 
-Options:
+  Options:
 
-size
--r, --region=""       Region in which you want to create the host
--s, --slug=""         A unique slug for the host
+  size
+  -r, --region=""       Region in which you want to create the host
+  -s, --slug=""         A unique slug for the host
 {% endhighlight %}
 
 #### Step 4: Pull an Existing Image onto the Host (Host is ‘hello’ in this instance).
 
 {% highlight bash %}
-    nitro images:pull hello dockerfile/ghost
+$ nitro images:pull hello dockerfile/ghost
 {% endhighlight %}
 
 If your Image is successfully pulled, you should see the following:
 
-````
+{% highlight bash %}
 $ nitro images:pull hello dockerfile/ghost
-Pulling image 'dockerfile/ghost' to 'hello'...
-ID                   Slug                Tag       Name   Created                                 Size   Virtual Size
-aad91b0a4e8311738f   dockerfile/ghost    latest           2014-09-03 00:08:20.995835 +0000 UTC    0      602771479
-```
+  Pulling image 'dockerfile/ghost' to 'hello'...
+  ID                   Slug                Tag       Name   Created                                 Size   Virtual Size
+  aad91b0a4e8311738f   dockerfile/ghost    latest           2014-09-03 00:08:20.995835 +0000 UTC    0      602771479
+{% endhighlight %}
 
 
 Step 4b: Alternately, you can also build your own DockerFile if you have an existing copy.
 
 {% highlight bash %}
-    nitro images:build hello ./Dockerfile
+$ nitro images:build hello ./Dockerfile
 {% endhighlight %}
 
 
@@ -78,7 +78,7 @@ Step 4b: Alternately, you can also build your own DockerFile if you have an exis
 This is where your Data will be stored - isolating your Data from Compute. You can then make changes to your application without affecting your Data.
 
 {% highlight bash %}
-    nitro volumes:create hello data
+$ nitro volumes:create hello data
 {% endhighlight %}
 
 
@@ -87,7 +87,7 @@ This is where your Data will be stored - isolating your Data from Compute. You c
 Now we can create a new Container, connect the Data Volume we created to the Container and link the appropriate port from the Container out to the host. Container linking also allows you to connect various microservices in your application stack to one another.
 
 {% highlight bash %}
-    nitro create hello -s CONTAINER_NAME -i dockerfile/ghost -p 80:2368 -v data:/ghost-overide
+$ nitro create hello -s CONTAINER_NAME -i dockerfile/ghost -p 80:2368 -v data:/ghost-overide
 {% endhighlight %}
 
 
@@ -99,13 +99,13 @@ Using the command above, a Container will be created using the Image dockerfile/
 We can ensure that the Container came up properly by accessing it.
 
 {% highlight bash %}
-    nitro shell CONTAINER_NAME
+$ nitro shell CONTAINER_NAME
 {% endhighlight %}
 
 Now we can access the Ghost Blog locally within the Container:
 
 {% highlight bash %}
-    curl localhost:2368
+$ curl localhost:2368
 {% endhighlight %}
 
 #### Step 8: Access the Service on Web.
@@ -113,9 +113,9 @@ Now we can access the Ghost Blog locally within the Container:
 Find the URL to your host and point your browser to your new Ghost Blog.
 
 {% highlight bash %}
-    nitro hosts:inspect hello
+$ nitro hosts:inspect hello
 {% endhighlight %}
 
-You have now successfully set up a Ghost Blog. 
+You have now successfully set up a Ghost Blog.
 
-Check out the [Private Repository Tutorial]({{site.url}}docs/private-registry/) to pull an existing Docker Image from your Private Repository. 
+Check out the [Private Repository Tutorial]({{site.url}}docs/private-registry/) to pull an existing Docker Image from your Private Repository.
