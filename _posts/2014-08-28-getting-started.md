@@ -51,7 +51,7 @@ $ nitro hosts:create
   -s, --slug=""         A unique slug for the host
 {% endhighlight %}
 
-## Step 4: Pull an Existing Image onto the Host (Host is ‘hello’ in this instance).
+## Step 4: Pull an Existing Image onto the Host.
 
 {% highlight bash %}
 $ nitro images:pull HOST_NAME dockerfile/ghost
