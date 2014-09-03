@@ -3,41 +3,45 @@ layout: overview
 mitem: overview
 ---
 
-## About Nitrous.IO Beta
+##Nitrous.IO Beta
 
-We use a containerization technology called Docker which is supported by Google, Microsoft and host of other technology stalwarts to make this happen so you get access to existing full set of pre-built images ranging from Language runtimes to Databases and
 
-If you're app is like a typical app you probably have a language run time which runs a web component, that interacts with one or more databases and other services. With the new Nitrous.IO you create and isolate these components. This gives you a couple of benefits:
+Nitrous.IO has always been about making it easier for developers to easily work collaboratively without having to fight with their environment. In this Beta - We are extending our existing environment few important ways. 
 
-1) You can update any component independently and without affecting the others.
+First - Many of you asked for the ability to be able to run in previleged mode. Now you can. Install any packages that you need to do - image magick, specific PHP tools or even visualization and data science libraries.
 
-2) Your development environment becomes similar to production environment.
+Second, this upgrade allows teams to snapshot the entire set of installed tools and configured environment. This means that anyone on the team can  create and share their templates not just the four available from Nitrous.IO. 
 
-We will show a few example applications that show you how to get started and how to start separating your application to gain these benefits.
+Finally, We are leveraging a technology called Docker to implement our containers. If you already have a DockerFile or Image you can use it with Nitrous.IO. If you don't already use Docker - no problem you can still enjoy all the benefits of Nitrous.IO's easy to use environments without having to learn yet another set of tools. 
 
-## New Concepts
+We will be continuously improving this experience over the next few weeks as we add easier ways to update the snapshots, connect to your local filesystem.  We would love to hear what you think - Please email us with your thoughts and questions: [support@nitrous.io](mailto:support@nitrous.io)
+
+
+
+## Getting Started: New Concepts
 
 Nitrous.IO uses a variety of terms to describe an application consisting of containers. Some of the most frequent include:
 
-Container: A portable, lightweight runtime that enables apps to be quickly assembled.
-Host:  A virtual machine that runs Docker containers and your workloads. A Host will run one or more Containers.
-Image: A Docker Image that is stored in Repository.
-DockerFile: A set of instructions to build an Image.
+_Container:_ A portable, lightweight runtime that enables apps to be quickly assembled.
+_Host:_  A virtual machine that runs Docker containers and your workloads. A Host will run one or more Containers.
+_Image:_ A Docker Image that is stored in Repository.
+_DockerFile:_ A set of instructions to build an Image.
 
-## Getting Started.
+
+## Getting Started: A 3 Step Tutorial 
 
 ### Step 1
 
-First let us get familiar with the Nitrous.IO service by using some existing resources to setup and running the popular Ghost Blog on Nitrous.IO.
-(Concepts: Nitro CLI; Hosts; Containers; Port Mapping; Data Volumes)
+First, let us get familiar with the Nitrous.IO service by using an existing template to setup and run the popular Ghost Blog on your Nitrous.IO host. _(Concepts: Nitro CLI; Hosts; Containers; Port Mapping; Data Volumes)_
 
 ### Step 2
 
-Now let us set up a brand new rails environment to suit our needs and share it with a colleague. (Concepts: DockerFile; Registry; Tiered Architecture; Linking Containers; Sharing)
+Now, let us set up a brand new rails environment connect it to a backing store and share it with a colleague. 
+_(Concepts: DockerFile; Private Registry; Tiered Architecture; Linking Containers; Sharing)_
 
 ### Step 3
 
 Finally, this tutorial will walk you through how to migrate your existing environment on to Nitrous.IO.
 
-We would love to hear from you - Please email us with your thoughts and question: [support@nitrous.io](mailto:support@nitrous.io)
 
+If you run into any issue or have suggestions we're available at: [support@nitrous.io](mailto:support@nitrous.io)
