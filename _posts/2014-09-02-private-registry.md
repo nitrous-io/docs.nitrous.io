@@ -10,7 +10,7 @@ mitem: private-registry
 
 ## Overview
 
-This document will walk you through how to pull an existing Docker image from your private registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed]({{site.url}}/docs/toolbelt/) and a [Host created on Nitrous.IO]({{site.url}}/docs/getting-started/).
+This document will walk you through how to pull an existing Docker image from your private registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed](/docs/toolbelt/) and a [Host created on Nitrous.IO](/docs/getting-started/).
 
 ## Step 1: Log in to your Private Registry via the Nitro CLI
 
@@ -34,4 +34,4 @@ $ nitro images:pull HOST_NAME USERNAME/REPO_NAME
 
 You can run `nitro images HOST_NAME` to verify that your image is now available on the host.
 
-You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Guide]({{site.url}}/docs/getting-started/).
+You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Guide](/docs/getting-started/).
