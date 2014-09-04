@@ -23,7 +23,7 @@ Username:
 Password (will not be echoed):
 Email: 
 Registry (press enter for index.docker.io):
-Successfully logged in to Docker registry on erictest2
+Successfully logged in to Docker registry on HOST_NAME
 {% endhighlight %}
 
 Note: Currently, Nitrous.IO supports [Docker Hub](hub.docker.com) and [Quay.io](quay.io) registries. 
