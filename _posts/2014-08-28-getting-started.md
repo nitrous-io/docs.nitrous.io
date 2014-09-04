@@ -9,17 +9,19 @@ mitem: docs
 
 ## Overview
 
-*This tutorial will quickly walk you through setting up a Ghost Blog on the new Nitrous.IO. If you need further details on any CLI command, enter a command in your terminal without parameters to get detailed information about the various options.*
+*This tutorial introduces you to key Nitrous.IO concepts by walking you through the process of setting up a Blogging platform called Ghost on Nitrous.IO. If you need further details on any CLI command, enter a command in your terminal without parameters to get detailed information about the various options.*
 
-## Step 1: Install the Nitrous.IO Command Line Interface (CLI) for your operating system.
+## Step 1: Install the Nitrous.IO Command Line Interface (CLI)
 
-* [Download Nitrous for Mac](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg)
+Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and [for Linux (Debian/Ubuntu.)]({{site.url}}/docs/toolbelt#linux)  
 
 ## Step 2: Authenticate with your Nitrous.IO credentials.
 
 {% highlight bash %}
 $ nitro login
 {% endhighlight %}
+
+<Show Output> 
 
 ## Step 2b: Optional - for Staging Only.
 
@@ -29,14 +31,16 @@ Set the `NITRO_API_URL` environment variable.
 $ export NITRO_API_URL=https://pro.nitrous.io
 {% endhighlight %}
 
-## Step 3: Create a new Host. Specify size, region and a unique host name.
+## Step 3: Create a new Host. 
+
+    The Host is the machine on which you create each of the isolated containers. Generally we reccomend one host per developer.      You can specify the size of the compute instance, a data center region and a unique host name. 
 
 {% highlight bash %}
 $ nitro hosts:create 512mb -r sfo -s HOST_NAME
 {% endhighlight %}
 
 
-Or issue the command without parameters to see all the options.
+You can also issue `nitro hosts:create` without parameters to see all the options and `nitro plans` will show you the current host size options.
 
 {% highlight bash %}
 $ nitro hosts:create
@@ -51,7 +55,13 @@ $ nitro hosts:create
   -s, --slug=""         A unique slug for the host
 {% endhighlight %}
 
-## Step 4: Pull an Existing Image onto the Host.
+
+
+## Step 4: Pull an Existing Image onto the Host 
+
+ Next we will pull in a templated image with a Ghost Blog that has already been set up for us into our Host called hello. 
+ You can use existing Docker images from Nitrous.IO, from your Private Repository or from any public docker repository.
+ Learn how to [pull an existing image from your private repository.](/docs/)  
 
 {% highlight bash %}
 $ nitro images:pull HOST_NAME dockerfile/ghost
@@ -60,7 +70,9 @@ $ nitro images:pull HOST_NAME dockerfile/ghost
   aad91b0a4e8311738f   dockerfile/ghost    latest           2014-09-03 00:08:20.995835 +0000 UTC    0      602771479
 {% endhighlight %}
 
-Step 4b: Alternately, you can also build your own DockerFile if you have an existing copy.
+Step 4b: Build an Image from a DockerFile
+
+Alternately, if you already have a DockerFile Nitrous.IO can also build an image for you from that file.
 
 {% highlight bash %}
 $ nitro images:build HOST_NAME ./Dockerfile
@@ -119,4 +131,4 @@ You have now successfully set up a Ghost Blog.
 
 ## Recommended Articles
 
-Check out the [Private Repository Tutorial](/docs/private-registry/) to pull an existing Docker Image from your Private Repository.
+Check out the [Private Repository Tutorial]({{site.url}}docs/private-registry/) to pull an existing Docker Image from your Private Repository.
