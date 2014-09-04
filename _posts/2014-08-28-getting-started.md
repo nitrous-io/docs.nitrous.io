@@ -15,32 +15,22 @@ mitem: docs
 
 Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and [for Linux (Debian/Ubuntu.)]({{site.url}}/docs/toolbelt#linux)  
 
-## Step 2: Authenticate with your Nitrous.IO credentials.
+## Step 2: Authenticate with your Nitrous.IO credentials
 
 {% highlight bash %}
 $ nitro login
 {% endhighlight %}
 
-<Show Output> 
+## Step 3: Create a new Host 
 
-## Step 2b: Optional - for Staging Only.
-
-Set the `NITRO_API_URL` environment variable.
-
-{% highlight bash %}
-$ export NITRO_API_URL=https://pro.nitrous.io
-{% endhighlight %}
-
-## Step 3: Create a new Host. 
-
-    The Host is the machine on which you create each of the isolated containers. Generally we reccomend one host per developer.      You can specify the size of the compute instance, a data center region and a unique host name. 
+The Host is the machine on which you create each of the isolated containers. Generally we reccomend one host per developer. You can specify the size of the compute instance, a data center region and a unique host name. 
 
 {% highlight bash %}
 $ nitro hosts:create 512mb -r sfo -s HOST_NAME
 {% endhighlight %}
 
+`nitro plans` will show you all the available host sizes and `nitro hosts:create` shows all available options.
 
-You can also issue `nitro hosts:create` without parameters to see all the options and `nitro plans` will show you the current host size options.
 
 {% highlight bash %}
 $ nitro hosts:create
@@ -78,7 +68,7 @@ Alternately, if you already have a DockerFile Nitrous.IO can also build an image
 $ nitro images:build HOST_NAME ./Dockerfile
 {% endhighlight %}
 
-## Step 5: Setup a Data Volume.
+## Step 5: Setup a Data Volume
 
 This is where your data will be stored - isolating your data from your computer. You can then make changes to your application without affecting your data.
 
@@ -86,7 +76,7 @@ This is where your data will be stored - isolating your data from your computer.
 $ nitro volumes:create HOST_NAME data
 {% endhighlight %}
 
-## Step 6: Create a Container using the Data Volume and with Port Forwarding.
+## Step 6: Create a Container using the Data Volume and with Port Forwarding
 
 Now we can create a new Container, connect the Data Volume we created to the Container and link the appropriate port from the Container out to the host. Container linking also allows you to connect various microservices in your application stack to one another.
 
@@ -96,7 +86,7 @@ $ nitro create HOST_NAME -s CONTAINER_NAME -i dockerfile/ghost -p 0.0.0.0:80:236
 
 Using the command above, a Container will be created using the Image dockerfile/ghost with Ports forwarded 80:2368 and Data Volume mounted.
 
-## Step 7: Connect to the Container via shell.
+## Step 7: Connect to the Container via shell
 
 We can ensure that the Container came up properly by accessing it.
 
@@ -110,7 +100,7 @@ Now we can access the Ghost Blog locally within the Container:
 $ curl localhost:2368
 {% endhighlight %}
 
-## Step 8: Access the Service on Web.
+## Step 8: Access the Service on Web
 
 Find the URL to your host and point your browser to your new Ghost Blog.
 
