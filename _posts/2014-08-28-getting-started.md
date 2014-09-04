@@ -13,7 +13,7 @@ mitem: docs
 
 ## Step 1: Install the Nitrous.IO Command Line Interface (CLI)
 
-Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and for [Linux (Debian/Ubuntu)]({{site.url}}/docs/toolbelt#linux).
+Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and for [Linux (Debian/Ubuntu)](/docs/toolbelt).
 
 ## Step 2: Authenticate with your Nitrous.IO credentials
 
@@ -82,7 +82,7 @@ This is where your data will be stored - isolating your data from your computer.
 {% highlight bash %}
 $ nitro volumes:create HOST_NAME data
 
-Creating volume on 'erictest2'. Please wait...
+Creating volume on 'HOST_NAME'. Please wait...
 Created new volume: 'data'
 {% endhighlight %}
 
@@ -125,10 +125,8 @@ $ nitro hosts:inspect HOST_NAME
 Slug            State    Size   IP              Hostname
 CONTAINER_NAME  running  512mb  107.170.204.64  HOST_NAME.nitrouspro.com
 
-Uptime  Memory Used (bytes)  Memory Total (bytes)  Storage Used (bytes)
-Storage Total (bytes)  Number of CPUs  CPU 0 Usage
-2315    502894592            513875968             4471504896
-21003628544            1               0.00 %
+Uptime  Memory Used (bytes)  Memory Total (bytes)  Storage Used (bytes) Storage Total (bytes)  Number of CPUs  CPU 0 Usage
+2315    502894592            513875968             4471504896           21003628544            1               0.00 %
 {% endhighlight %}
 
 You have now successfully set up a Ghost Blog.
