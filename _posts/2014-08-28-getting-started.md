@@ -5,7 +5,7 @@ published: true
 mitem: docs
 ---
 
-# Getting Started with Your Nitrous.IO Environment by Setting Up a Ghost Blog.
+# Getting Started with Your Nitrous.IO Environment
 
 ## Overview
 
@@ -13,9 +13,11 @@ mitem: docs
 
 ## Step 1: Install the Nitrous.IO Command Line Interface (CLI)
 
-Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and [for Linux (Debian/Ubuntu.)]({{site.url}}/docs/toolbelt#linux)  
+Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and for [Linux (Debian/Ubuntu)]({{site.url}}/docs/toolbelt#linux).
 
 ## Step 2: Authenticate with your Nitrous.IO credentials
+
+Set up a [Nitrous.IO account](https://www.nitrous.io) before performing this step.
 
 {% highlight bash %}
 $ nitro login
@@ -23,13 +25,18 @@ $ nitro login
 
 ## Step 3: Create a new Host 
 
-The Host is the machine on which you create each of the isolated containers. Generally we reccomend one host per developer. You can specify the size of the compute instance, a data center region and a unique host name. 
+The Host is the machine on which you create each of the isolated Containers. Generally we recommend one Host per developer. You can specify the size of the compute instance, a data center region and a unique Host name. 
 
 {% highlight bash %}
 $ nitro hosts:create 512mb -r sfo -s HOST_NAME
+
+Creating new host 'HOST_NAME'. Please wait...
+Created new host:
+Slug         State      Size
+HOST_NAME    running    512mb
 {% endhighlight %}
 
-`nitro plans` will show you all the available host sizes and `nitro hosts:create` shows all available options.
+`nitro plans` will show you all the available Host sizes and `nitro hosts:create` shows all available options.
 
 
 {% highlight bash %}
@@ -46,15 +53,15 @@ $ nitro hosts:create
 {% endhighlight %}
 
 
-
 ## Step 4: Pull an Existing Image onto the Host 
 
- Next we will pull in a templated image with a Ghost Blog that has already been set up for us into our Host called hello. 
- You can use existing Docker images from Nitrous.IO, from your Private Repository or from any public docker repository.
- Learn how to [pull an existing image from your private repository.](/docs/)  
+ Next, we will pull a templated Image with a Ghost Blog that has already been set up for us into our Host.
+ You can use existing Docker images from Nitrous.IO, from your Private Registry or from any public Docker Registry.
+ Learn how to [pull an existing image from your private registry](/docs/private-registry).  
 
 {% highlight bash %}
 $ nitro images:pull HOST_NAME dockerfile/ghost
+
   Pulling image 'dockerfile/ghost' to 'HOST_NAME'...
   ID                   Slug                Tag       Name   Created                                 Size   Virtual Size
   aad91b0a4e8311738f   dockerfile/ghost    latest           2014-09-03 00:08:20.995835 +0000 UTC    0      602771479
@@ -74,6 +81,9 @@ This is where your data will be stored - isolating your data from your computer.
 
 {% highlight bash %}
 $ nitro volumes:create HOST_NAME data
+
+Creating volume on 'erictest2'. Please wait...
+Created new volume: 'data'
 {% endhighlight %}
 
 ## Step 6: Create a Container using the Data Volume and with Port Forwarding
@@ -82,6 +92,11 @@ Now we can create a new Container, connect the Data Volume we created to the Con
 
 {% highlight bash %}
 $ nitro create HOST_NAME -s CONTAINER_NAME -i dockerfile/ghost -p 0.0.0.0:80:2368 -v data:/ghost-overide
+
+Creating container on 'HOST_NAME'. Please wait...
+Created new container: 'CONTAINER_NAME'
+Slug             Image               State
+CONTAINER_NAME   dockerfile/ghost    running
 {% endhighlight %}
 
 Using the command above, a Container will be created using the Image dockerfile/ghost with Ports forwarded 80:2368 and Data Volume mounted.
@@ -106,8 +121,9 @@ Find the URL to your host and point your browser to your new Ghost Blog.
 
 {% highlight bash %}
 $ nitro hosts:inspect HOST_NAME
-Slug    State    Size   IP              Hostname
-devbox  running  512mb  107.170.204.64  HOST_NAME.nitrouspro.com
+
+Slug            State    Size   IP              Hostname
+CONTAINER_NAME  running  512mb  107.170.204.64  HOST_NAME.nitrouspro.com
 
 Uptime  Memory Used (bytes)  Memory Total (bytes)  Storage Used (bytes)
 Storage Total (bytes)  Number of CPUs  CPU 0 Usage
@@ -119,6 +135,9 @@ You have now successfully set up a Ghost Blog.
 
 ![Ghost Blog Homepage](/images/articles/ghost-blog-homepage.png)
 
-## Recommended Articles
+<br>
 
-Check out the [Private Repository Tutorial]({{site.url}}docs/private-registry/) to pull an existing Docker Image from your Private Repository.
+Apart from the Ghost Blog Image, you can also use existing Docker Images from Nitrous.IO, from your Private Registry or from any public Docker Registry. 
+
+Learn how to [pull an existing Docker Image from your Private Registry](/docs/private-registry).
+
