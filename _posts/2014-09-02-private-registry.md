@@ -28,7 +28,7 @@ Successfully logged in to Docker registry on HOST_NAME
 
 Note: Currently, Nitrous.IO supports [Docker Hub](hub.docker.com) and [Quay.io](quay.io) registries. 
 
-## Step 2: Pull an existing Image from your Private Registry.
+## Step 2: Pull an existing Image from your Private Registry
 
 Now that you are logged in, you can simply pull in any private or public Image from your registry via the `nitro images:pull` command.
 
