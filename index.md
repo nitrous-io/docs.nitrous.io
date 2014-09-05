@@ -40,7 +40,7 @@ Nitrous.IO uses a few new terms to describe an application consisting of contain
 
 ### Step 1
 
-First, let us get familiar with the Nitrous.IO service with the getting stated guide which walks through creating a Nitrous.IO host and sets up an web blogging service using a existing template/image. 
+First, let us get familiar with the Nitrous.IO service with [the getting stated guide](/docs/getting-started) which walks through creating a Nitrous.IO host and sets up an web blogging service using a existing template/image. 
 
 _(Concepts: Nitro CLI; Hosts; Containers; Port Mapping; Data Volumes)_
 
