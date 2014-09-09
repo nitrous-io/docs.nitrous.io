@@ -46,7 +46,7 @@ _(Concepts: Nitro CLI; Hosts; Containers; Port Mapping; Data Volumes)_
 
 ### Step 2
 
-Now, let us set up a brand new rails environment connect it to a backing store and share it with a colleague. 
+Now, let us [set up a brand new rails environment connect it to a backing store and share it with a colleague.](/docs/rails-app/) 
 
 _(Concepts: DockerFile; Private Registry; Tiered Architecture; Linking Containers; Sharing)_
 
