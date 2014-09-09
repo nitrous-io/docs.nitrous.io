@@ -26,9 +26,9 @@ mitem: docs
       </a>
     </li>
     <li>
-      <a href="/docs/teams/">
+      <a href="/docs/snapshots-sharing/">
         <i class="fa fa-file-text-o"></i>
-          Team and Sharing Overview
+          Snapshots and Sharing for Teams
       </a>
     </li>
   </ul>
