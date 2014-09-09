@@ -49,13 +49,26 @@ Now you can push your custom snapshot into a public or private repo on your regi
 $ nitro images:push IMAGE_NAME
 {% endhighlight %}
 
-## Step 5: Replicate as needed
+## Step 5: Pull the Image to a New Host
 
-Your team can now pull that image from the registry and create new containers as needed.
+Your team can now pull that image from the registry on to their own host. Since the image is already on your own host this command is not needed if you are replicating on the host where the image was created.
+
+On a new host run the following command: 
 
 {% highlight bash %}
 $ nitro images:pull HOST_NAME REGISTRY_HOST_NAME/REPO_NAME/IMAGE_NAME
 {% endhighlight %}
+
+## Step 6: Replicate the Container. 
+
+Now you can replicate the container using the appropriate port and volume mounting options to suit your needs. 
+If you're replicating on an existing host be sure to use different ports from any that are being used by existing containers.  
+
+{% highlight bash %}
+$ nitro createHOST_NAME -s clone2 -i IMAGE_NAME -p public:80 -p private:8080
+{% endhighlight %}
+
+
 
 ## Recommended Articles
 
