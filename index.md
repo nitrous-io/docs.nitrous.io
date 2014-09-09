@@ -48,12 +48,12 @@ _(Concepts: Nitro CLI; Hosts; Containers; Port Mapping; Data Volumes)_
 
 Now, let us [set up a brand new rails environment connect it to a backing store and share it with a colleague.](/docs/rails-app/) 
 
-_(Concepts: DockerFile; Private Registry; Tiered Architecture; Linking Containers; Sharing)_
+_(Concepts: Private Registry; Tiered Architecture; Linking Containers; Sharing)_
 
 ### Step 3
 
 Finally, this tutorial will walk you through how to migrate your existing environment on to Nitrous.IO.
 
-_(Concepts: Migration, Vagrant to Docker, Tiered Application)_
+_(Concepts: Dockerfile, Migration, Vagrant to Docker, Tiered Application)_
 
 If you run into any issue or have suggestions, we're available at: [support@nitrous.io](mailto:support@nitrous.io)
