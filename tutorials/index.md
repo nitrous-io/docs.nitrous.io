@@ -1,54 +1,39 @@
 ---
 layout: docs
-title: Documentation
+title: Tutorials
 published: true
-mitem: docs
+mitem: tutorials
 ---
-
-<h2>Getting Started</h2>
+<h2>Tutorials</h2>
   <ul>
     <li>
-      <a href="/docs/getting-started">
+      <a href="/getting-started">
         <i class="fa fa-file-text-o"></i>
         Getting Started
       </a>
     </li>
     <li>
-      <a href="/docs/toolbelt">
-        <i class="fa fa-file-text-o"></i>
-        Installing the Nitrous Toolbelt
-      </a>
-    </li>
-    <li>
-      <a href="/docs/private-registry/">
+      <a href="/private-registry/">
         <i class="fa fa-file-text-o"></i>
         Pulling an existing Docker Image from your Private Repository
       </a>
     </li>
     <li>
-      <a href="/docs/teams/">
+      <a href="/teams/">
         <i class="fa fa-file-text-o"></i>
-          Team and Sharing Overview
+          Customizing and Sharing Images
       </a>
     </li>
-  </ul>
-
-<h2>Tutorials</h2>
-  <ul class="toc">
     <li>
-      <a href="/docs/rails-app">
+      <a href="/rails-app">
         <i class="fa fa-file-text-o"></i>
         Setting up a new Rails Application
       </a>
     </li>
-  </ul>
-
-<h2>Migration</h2>
-  <ul class="toc">
-    <li>
-      <a href="/docs/migration">
+    <!--<li>
+      <a href="/migration">
         <i class="fa fa-file-text-o"></i>
         Migrating Your App to Nitrous.IO
       </a>
-    </li>
+    </li>-->
   </ul>
