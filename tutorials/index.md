@@ -19,7 +19,7 @@ mitem: tutorials
       </a>
     </li>
     <li>
-      <a href="{{site.baseurl}}/teams/">
+      <a href="{{site.baseurl}}/images/">
         <i class="fa fa-file-text-o"></i>
           Customizing and Sharing Images
       </a>
