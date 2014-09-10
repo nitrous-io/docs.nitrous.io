@@ -19,6 +19,6 @@ Articles should be dated and added to `/_posts/`. If you need to add more articl
 
 ### Updating files and Publishing
 
-**Always keep the Master branch updated before updating the gh-pages branch.**
+Editing: Work within the **gh-pages** branch. For CSS alterations, work within the Sass files (the .css files will be overwritten upon publishing).
 
-To update the `gh-pages` branch run `bundle exec rake`. This will generate static content within the `_site/` folder, which Github Pages can host.
+Publishing: After making changes, simply run `git publish` to publish to the gh-pages branch. This will automate `git add`, `git commit`, and run Sass.
