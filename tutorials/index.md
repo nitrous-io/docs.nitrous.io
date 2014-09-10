@@ -14,7 +14,7 @@ mitem: tutorials
     </li>
     <li>
       <a href="{{site.baseurl}}/private-registry/">
-        <i class="{{site.baseurl}}fa fa-file-text-o"></i>
+        <i class="fa fa-file-text-o"></i>
         Pulling an existing Docker Image from your Private Repository
       </a>
     </li>
