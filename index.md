@@ -19,7 +19,7 @@ Nitrous.IO has always been about making it easier for developers to easily work 
 
 ## Install
 
-The Nitrous Toolkit is currently only supported for OSX and Debian/Ubuntu. Head on over to the [Download page](/download/) for installation instructions.
+The Nitrous Toolkit is currently only supported for OSX and Debian/Ubuntu. Head on over to the [Download page]({{site.baseurl}}/download/) for installation instructions.
 
 ## Overview
 
@@ -87,13 +87,13 @@ A DockerFile is a set of instructions to build an image.
 
 ### Getting Started
 
-First, let us get familiar with the Nitrous.IO service with [the Getting Started tutorial](/getting-started) which walks through creating a Nitrous.IO host and sets up a web blogging service using an existing template/Image.
+First, let us get familiar with the Nitrous.IO service with [the Getting Started tutorial]({{site.baseurl}}/getting-started) which walks through creating a Nitrous.IO host and sets up a web blogging service using an existing template/Image.
 
 _(Concepts: Nitro CLI; Hosts; Containers; Port Mapping; Data Volumes)_
 
 ### Creating a Rails App
 
-Now, let us [set up a brand new rails environment connect it to a backing store.](/rails-app/)
+Now, let us [set up a brand new rails environment connect it to a backing store.]({{site.baseurl}}/rails-app/)
 
 _(Concepts: Private Registry; Tiered Architecture; Linking Containers; Sharing)_
 

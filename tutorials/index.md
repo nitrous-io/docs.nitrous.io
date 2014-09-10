@@ -7,31 +7,31 @@ mitem: tutorials
 <h2>Tutorials</h2>
   <ul>
     <li>
-      <a href="/getting-started">
+      <a href="{{site.baseurl}}/getting-started">
         <i class="fa fa-file-text-o"></i>
         Getting Started
       </a>
     </li>
     <li>
       <a href="/private-registry/">
-        <i class="fa fa-file-text-o"></i>
+        <i class="{{site.baseurl}}fa fa-file-text-o"></i>
         Pulling an existing Docker Image from your Private Repository
       </a>
     </li>
     <li>
-      <a href="/teams/">
+      <a href="{{site.baseurl}}/teams/">
         <i class="fa fa-file-text-o"></i>
           Customizing and Sharing Images
       </a>
     </li>
     <li>
-      <a href="/rails-app">
+      <a href="{{site.baseurl}}/rails-app">
         <i class="fa fa-file-text-o"></i>
         Setting up a new Rails Application
       </a>
     </li>
     <!--<li>
-      <a href="/migration">
+      <a href="{{site.baseurl}}/migration">
         <i class="fa fa-file-text-o"></i>
         Migrating Your App to Nitrous.IO
       </a>

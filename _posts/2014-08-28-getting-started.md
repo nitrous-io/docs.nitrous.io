@@ -57,7 +57,7 @@ $ nitro hosts:create
 
  Next, we will pull a templated Image with a Ghost Blog that has already been set up for us into our Host.
  You can use existing Docker images from Nitrous.IO, from your Private Registry or from any public Docker Registry.
- Learn how to [pull an existing image from your private registry](/private-registry).
+ Learn how to [pull an existing image from your private registry]({{site.baseurl}}/private-registry).
 
 {% highlight bash %}
 $ nitro images:pull HOST_NAME dockerfile/ghost
@@ -131,11 +131,11 @@ Uptime  Memory Used (bytes)  Memory Total (bytes)  Storage Used (bytes) Storage 
 
 You have now successfully set up a Ghost Blog.
 
-![Ghost Blog Homepage](/images/articles/ghost-blog-homepage.png)
+![Ghost Blog Homepage]({{site.baseurl}}/images/articles/ghost-blog-homepage.png)
 
 <br>
 
 Apart from the Ghost Blog Image, you can also use existing Docker Images from Nitrous.IO, from your Private Registry or from any public Docker Registry.
 
-Learn how to [pull an existing Docker Image from your Private Registry](/private-registry).
+Learn how to [pull an existing Docker Image from your Private Registry]({{site.baseurl}}/private-registry).
 

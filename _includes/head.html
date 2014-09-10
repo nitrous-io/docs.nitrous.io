@@ -27,14 +27,14 @@
     <nav class="collapse navbar-collapse bs-navbar-collapse nav navbar-nav navbar-right" role="navigation">
       <ul class="nav navbar-nav">
         <li {% if page.mitem contains 'overview' %} class="active" {% endif %}>
-          <a href="/" onclick="ga('send', 'event', 'Navbar', 'Docs', 'Expo');">Overview</a>
+          <a href="{{site.baseurl}}/" onclick="ga('send', 'event', 'Navbar', 'Docs', 'Expo');">Overview</a>
         </li>
         <li {% if page.mitem contains 'tutorials' %} class="active" {% endif %}>
-          <a href="/tutorials" onclick="ga('send', 'event', 'Navbar',
+          <a href="{{site.baseurl}}/tutorials" onclick="ga('send', 'event', 'Navbar',
             'Docs', 'Expo');">Tutorials</a>
         </li>
         <li {% if page.mitem contains 'download' %} class="active" {% endif %}>
-          <a href="/download" onclick="ga('send', 'event', 'Navbar',
+          <a href="{{site.baseurl}}/download" onclick="ga('send', 'event', 'Navbar',
             'Docs', 'Expo');">Download</a>
         </li>
       </ul>

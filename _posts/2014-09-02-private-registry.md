@@ -45,6 +45,4 @@ Pulling image 'USERNAME/REPO' to 'HOST_NAME'...
 
 You can run `nitro images HOST_NAME` to verify that your Image is now available on the host.
 
-<br>
-
-You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Tutorial](/getting-started/).
+You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Tutorial]({{site.baseurl}}/getting-started/).
