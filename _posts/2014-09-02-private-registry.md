@@ -2,7 +2,6 @@
 layout: docs
 title: Pulling an existing Docker Image from your Private Registry
 published: true
-mitem: private-registry
 ---
 
 # Pulling an existing Docker Image from your Private Registry
@@ -10,7 +9,7 @@ mitem: private-registry
 
 ## Overview
 
-This document will walk you through how to pull an existing Docker image from your Private Registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed](/download/) and a [Host created on Nitrous.IO](/getting-started/).
+This document will walk you through how to pull an existing Docker image from your Private Registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed]({{site.baseurl}}/download/) and a [Host created on Nitrous.IO]({{site.baseurl}}/getting-started/).
 
 ## Step 1: Log in to your Private Registry via the Nitro CLI
 
