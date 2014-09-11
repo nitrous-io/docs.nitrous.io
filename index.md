@@ -19,9 +19,9 @@ Nitrous.IO has always been about making it easier for developers to easily work 
 
 ## Install
 
-The Nitrous Toolkit is currently supported for OSX and Debian/Ubuntu. 
+The Nitrous.IO Toolkit is currently supported for OSX and Debian/Ubuntu. 
 
-[Download the right client for you OS]({{site.baseurl}}/download/) for installation instructions.
+[Download the right client for your OS here.]({{site.baseurl}}/download/)
 
 ## Overview
 
@@ -67,7 +67,7 @@ _(Concepts: Private Registry; Tiered Architecture; Linking Containers; Sharing)_
 
 Follow this guide on sharing your environment with another collegue.
 
-### Migrating to Nitrous _(Coming Soon)_
+### Migrating to Nitrous.IO _(Coming Soon)_
 
 Finally, this tutorial will walk you through how to migrate your existing environment on to Nitrous.IO.
 
