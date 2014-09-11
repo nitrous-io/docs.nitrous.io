@@ -3,13 +3,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Language" content="en-us" />
-  <title>Nitrous.IO Documentation (Beta)</title>
+  <title>Nitrous.IO Documentation</title>
   <link rel="alternate" type="application/atom+xml" title="API Changes" href="/changes.atom" />
-  <link href="/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/css/docs.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/css/syntax.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/css/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/css/docs.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/css/syntax.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -22,19 +22,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand">Nitrous.IO</a>
+        <a href="{{site.baseurl}}/" class="navbar-brand">Nitrous.IO Docs</a>
       </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse nav navbar-nav navbar-right" role="navigation">
       <ul class="nav navbar-nav">
         <li {% if page.mitem contains 'overview' %} class="active" {% endif %}>
-          <a href="/" onclick="ga('send', 'event', 'Navbar', 'Docs', 'Expo');">Overview</a>
+          <a href="{{site.baseurl}}/" onclick="ga('send', 'event', 'Navbar', 'Docs', 'Expo');">Overview</a>
         </li>
-        <li {% if page.mitem contains 'docs' %} class="active" {% endif %}>
-          <a href="/docs" onclick="ga('send', 'event', 'Navbar',
-            'Docs', 'Expo');">Documentation</a>
+        <li {% if page.mitem contains 'tutorials' %} class="active" {% endif %}>
+          <a href="{{site.baseurl}}/tutorials" onclick="ga('send', 'event', 'Navbar',
+            'Docs', 'Expo');">Tutorials</a>
         </li>
         <li {% if page.mitem contains 'download' %} class="active" {% endif %}>
-          <a href="/docs/toolbelt/" onclick="ga('send', 'event', 'Navbar',
+          <a href="{{site.baseurl}}/download" onclick="ga('send', 'event', 'Navbar',
             'Docs', 'Expo');">Download</a>
         </li>
       </ul>

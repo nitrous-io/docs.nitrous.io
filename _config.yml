@@ -1,9 +1,9 @@
 # Site settings
-title: Nitrous.IO Docs
+title: Nitrous Documentation
 email: support@nitrous.io
-permalink: /docs/:title
+permalink: /:title
 description: "Nitrous.IO Documentation"
-baseurl: ""
+baseurl: "/docs.nitrous.io"
 url: "http://docs.nitrous.io"
 twitter_username: nitrousio
 github_username:  nitrous-io

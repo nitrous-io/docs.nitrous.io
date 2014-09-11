@@ -13,7 +13,7 @@ mitem: docs
 
 ## Step 1: Install the Nitrous.IO Command Line Interface (CLI)
 
-Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and for [Linux (Debian/Ubuntu)](/docs/toolbelt).
+Download and Install the Nitrous.IO CLI. The CLI is currently available for [Mac - OS X](https://osx.nitrous.io/nitro-latest-darwin_amd64.pkg) and for [Linux (Debian/Ubuntu)](/download).
 
 ## Step 2: Authenticate with your Nitrous.IO credentials
 
@@ -23,9 +23,9 @@ Set up a [Nitrous.IO account](https://www.nitrous.io) before performing this ste
 $ nitro login
 {% endhighlight %}
 
-## Step 3: Create a new Host 
+## Step 3: Create a new Host
 
-The Host is the machine on which you create each of the isolated Containers. Generally we recommend one Host per developer. You can specify the size of the compute instance, a data center region and a unique Host name. 
+The Host is the machine on which you create each of the isolated Containers. Generally we recommend one Host per developer. You can specify the size of the compute instance, a data center region and a unique Host name.
 
 {% highlight bash %}
 $ nitro hosts:create 512mb -r sfo -s HOST_NAME
@@ -53,11 +53,11 @@ $ nitro hosts:create
 {% endhighlight %}
 
 
-## Step 4: Pull an Existing Image onto the Host 
+## Step 4: Pull an Existing Image onto the Host
 
  Next, we will pull a templated Image with a Ghost Blog that has already been set up for us into our Host.
  You can use existing Docker images from Nitrous.IO, from your Private Registry or from any public Docker Registry.
- Learn how to [pull an existing image from your private registry](/docs/private-registry).  
+ Learn how to [pull an existing image from your private registry]({{site.baseurl}}/private-registry).
 
 {% highlight bash %}
 $ nitro images:pull HOST_NAME dockerfile/ghost
@@ -131,11 +131,11 @@ Uptime  Memory Used (bytes)  Memory Total (bytes)  Storage Used (bytes) Storage 
 
 You have now successfully set up a Ghost Blog.
 
-![Ghost Blog Homepage](/images/articles/ghost-blog-homepage.png)
+![Ghost Blog Homepage]({{site.baseurl}}/images/articles/ghost-blog-homepage.png)
 
 <br>
 
-Apart from the Ghost Blog Image, you can also use existing Docker Images from Nitrous.IO, from your Private Registry or from any public Docker Registry. 
+Apart from the Ghost Blog Image, you can also use existing Docker Images from Nitrous.IO, from your Private Registry or from any public Docker Registry.
 
-Learn how to [pull an existing Docker Image from your Private Registry](/docs/private-registry).
+Learn how to [pull an existing Docker Image from your Private Registry]({{site.baseurl}}/private-registry).
 

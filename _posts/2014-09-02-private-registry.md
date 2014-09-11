@@ -2,7 +2,6 @@
 layout: docs
 title: Pulling an existing Docker Image from your Private Registry
 published: true
-mitem: private-registry
 ---
 
 # Pulling an existing Docker Image from your Private Registry
@@ -10,7 +9,7 @@ mitem: private-registry
 
 ## Overview
 
-This document will walk you through how to pull an existing Docker image from your Private Registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed](/docs/toolbelt/) and a [Host created on Nitrous.IO](/docs/getting-started/).
+This document will walk you through how to pull an existing Docker image from your Private Registry to your Nitrous.IO Host. This guide assumes that you have the [Nitro CLI installed]({{site.baseurl}}/download/) and a [Host created on Nitrous.IO]({{site.baseurl}}/getting-started/).
 
 ## Step 1: Log in to your Private Registry via the Nitro CLI
 
@@ -19,14 +18,14 @@ You will be prompted for your Username, Password, Email and Registry URL, enter 
 {% highlight bash %}
 $ nitro registry:login HOST_NAME
 
-Username: 
+Username:
 Password (will not be echoed):
-Email: 
+Email:
 Registry (press enter for index.docker.io):
 Successfully logged in to Docker registry on HOST_NAME
 {% endhighlight %}
 
-Note: Currently, Nitrous.IO supports [Docker Hub](hub.docker.com) and [Quay.io](quay.io) registries. 
+Note: Currently, Nitrous.IO supports [Docker Hub](hub.docker.com) and [Quay.io](quay.io) registries.
 
 ## Step 2: Pull an existing Image from your Private Registry
 
@@ -45,6 +44,4 @@ Pulling image 'USERNAME/REPO' to 'HOST_NAME'...
 
 You can run `nitro images HOST_NAME` to verify that your Image is now available on the host.
 
-<br>
-
-You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Tutorial](/docs/getting-started/).
+You have now successfully pulled your existing Image from a Private Registry. If you need help creating a container from this Image, please follow Step 6 to 8 of the [Getting Started Tutorial]({{site.baseurl}}/getting-started/).
