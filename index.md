@@ -19,69 +19,35 @@ Nitrous.IO has always been about making it easier for developers to easily work 
 
 ## Install
 
-The Nitrous Toolkit is currently only supported for OSX and Debian/Ubuntu. Head on over to the [Download page]({{site.baseurl}}/download/) for installation instructions.
+The Nitrous Toolkit is currently supported for OSX and Debian/Ubuntu. 
+
+[Download the right client for you OS]({{site.baseurl}}/download/) for installation instructions.
 
 ## Overview
+
+If you're familiar with containerization you can skip this next section and go directly to the getting started guide and tutorial in the next section. Otherwise here are a few basic concepts that will help you get started easily. 
 
 ### Host
 
 A host is a virtual machine that runs containers. A host runs one or more Containers that can be linked together.
 
-Create a new container with the following command:
-
-{% highlight bash %}
-$ nitro hosts:create 512mb -r sfo -s HOST_NAME
-{% endhighlight %}
-
 ### Container
 
-A container is a portable, lightweight runtime that enables apps to be quickly assembled.
-
-You can create a container within a running host. Run the following command to create a container, specifying a host which you have already created:
-
-{% highlight bash %}
-$ nitro create HOST_NAME -s CONTAINER_NAME
-{% endhighlight %}
-
-You can also include an image from your registry, enable port forwarding, and also specify if the container should be publicly acessible or not.
-
-{% highlight bash %}
-$ nitro create HOST_NAME -s CONTAINER_NAME -i nitrousio/ruby -p public:3000:3000
-{% endhighlight %}
+A container is a portable, lightweight runtime that enables apps to be quickly assembled. You can create a container within a running host. Containers can be built from existing images that are stored in your registry and be made accessible on a private network within the host or a public network. To learn more simply type `nitro create` in the terminal. 
 
 ### Image
 
-A Docker image that is stored in Repository that is used as a template for new containers.
-
-When pulling an image you will need to specify the host. Here is an example of pulling the ghost image from Docker Hub to a host:
-
-{% highlight bash %}
-$ nitro images:pull HOST_NAME dockerfile/ghost
-{% endhighlight %}
+An image is a template for creating and sharing containers. Images are stored in a Repository and pulled to your host where it can be used to replicate containers. You can also create images with the `nitro commit` command. 
+Learn more about images with by typing `nitro images` into the terminal  or [learn how to create your images and share them with your team.]({{site.baseurl}}/sharing)
 
 ### Registry
 
-You can connect your host to public or private registries.
-
-Run the following command to login to the Docker Hub registry:
-
-{% highlight bash %}
-$ nitro registry:login HOST_NAME
-{% endhighlight %}
+Registries are where Images are stored so that they can be shared. Nitrous.IO supports Docker Hub and Quay.Io registries out of the box but you can also use your own private registry if you have one setup. 
 
 ### Volume
 
-A data volume is where your data will be stored - isolating your data from your computer. You can then make changes to your application without affecting your data.
+A data volume is persistant store on you host where you can store the data needed by your containers. Isolating your data from your container allows you to make changes to your application without affecting your data.
 
-Run the following command to create a new volume:
-
-{% highlight bash %}
-$ nitro volumes:create HOST_NAME VOLUME_NAME
-{% endhighlight %}
-
-### DockerFile
-
-A DockerFile is a set of instructions to build an image.
 
 ## Tutorials
 
@@ -101,10 +67,12 @@ _(Concepts: Private Registry; Tiered Architecture; Linking Containers; Sharing)_
 
 Follow this guide on sharing your environment with another collegue.
 
-### Migrating to Nitrous
+### Migrating to Nitrous _(Coming Soon)_
 
 Finally, this tutorial will walk you through how to migrate your existing environment on to Nitrous.IO.
 
 _(Concepts: Dockerfile, Migration, Vagrant to Docker, Tiered Application)_
+
+---
 
 If you run into any issue or have suggestions, we're available at: [support@nitrous.io](mailto:support@nitrous.io)
