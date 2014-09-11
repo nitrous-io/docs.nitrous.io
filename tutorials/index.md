@@ -19,9 +19,9 @@ mitem: tutorials
       </a>
     </li>
     <li>
-      <a href="{{site.baseurl}}/images/">
+      <a href="{{site.baseurl}}/snapshots-sharing/">
         <i class="fa fa-file-text-o"></i>
-          Customizing and Sharing Images
+          Snapshots and Sharing for Teams
       </a>
     </li>
     <li>
