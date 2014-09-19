@@ -27,7 +27,13 @@ mitem: tutorials
     <li>
       <a href="{{site.baseurl}}/rails-app">
         <i class="fa fa-file-text-o"></i>
-        Setting up a new Rails Application
+        Get Started with Rails
+      </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/wordpress">
+        <i class="fa fa-file-text-o"></i>
+        Get Started with WordPress
       </a>
     </li>
     <!--<li>
