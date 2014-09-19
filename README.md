@@ -7,9 +7,9 @@ Prepare this repo for your local environment:
     $ gem install bundle
     $ bundle install
 
-Run with Jekyll:
+Run locally with Jekyll:
 
-    $ bundle exec jekyll serve -w
+    $ bundle exec jekyll serve --baseurl "" -w
 
 ### Creating and Editing Pages/Posts
 
