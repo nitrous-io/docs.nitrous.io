@@ -36,6 +36,12 @@ mitem: tutorials
         Get Started with WordPress
       </a>
     </li>
+    <li>
+      <a href="{{site.baseurl}}/cli-commands">
+        <i class="fa fa-file-text-o"></i>
+        CLI Commands
+      </a>
+    </li>
     <!--<li>
       <a href="{{site.baseurl}}/migration">
         <i class="fa fa-file-text-o"></i>
