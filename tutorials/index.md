@@ -42,6 +42,18 @@ mitem: tutorials
         CLI Commands
       </a>
     </li>
+    <li>
+      <a href="{{site.baseurl}}/volumes">
+        <i class="fa fa-file-text-o"></i>
+        Managing Volumes
+      </a>
+    </li>
+    <li>
+      <a href="{{site.baseurl}}/hosts-and-containers">
+        <i class="fa fa-file-text-o"></i>
+        Hosts and Containers
+      </a>
+    </li>
     <!--<li>
       <a href="{{site.baseurl}}/migration">
         <i class="fa fa-file-text-o"></i>
