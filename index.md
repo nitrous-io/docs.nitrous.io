@@ -7,9 +7,9 @@ mitem: overview
 
 Nitrous.IO has always been about making it easier for developers to easily work collaboratively without having to fight with their environment. In this Beta - We are extending our existing environment in a few important ways:
 
-> ####Privileged Mode: Sudo when you need to
+> ####Root Access: Sudo when you need to
 >
-> First, many customers like you asked for the ability to be able to run in privileged mode. Now you can. Install any packages that > you need to do - imagemagick, PHP tools or even specific visualization and data-science libraries.
+> First, many customers like you asked for the ability to be able to run commands as the root user. Now you can. Install any packages that > you need to do - imagemagick, PHP tools or even specific visualization and data-science libraries.
 >
 > ####Snapshots: Create and Share Entire Environments
 > Second, this upgrade allows teams to snapshot the entire set of installed tools and configured environment. This means that anyone on the team can create and share their templates and not just the four available from Nitrous.IO.
