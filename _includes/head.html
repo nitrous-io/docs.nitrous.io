@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="Content-Language" content="en-us" />
-  <title>Nitrous.IO Documentation</title>
-  <link rel="alternate" type="application/atom+xml" title="API Changes" href="/changes.atom" />
-  <link href="{{site.baseurl}}/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="{{site.baseurl}}/css/main.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="{{site.baseurl}}/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="{{site.baseurl}}/css/docs.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="{{site.baseurl}}/css/syntax.css" media="screen" rel="stylesheet" type="text/css">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>{{ page.title }}</title>
+  <meta content='Nitrous Support Documentation. Tutorials, FAQ, and other guides for building your apps directly on Nitrous' name='description'>
+  <meta content='Nitrous' name='author'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600italic,600' rel='stylesheet' type='text/css'>
+
+  <link rel='stylesheet' href='/css/bootstrap3/css/bootstrap.css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="/css/action.css" media="screen, projection" rel="stylesheet">
+  <link href="/css/highlight.js/github.css" media="screen, projection" rel="stylesheet">
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
 </head>
-
 <body>
-  <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+  <div class="sidebar" id="sidebar">
+    {% include menu.html %}
+  </div>
+  <nav class="navbar navbar-inverse" role="navigation">
     <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="{{site.baseurl}}/" class="navbar-brand">Nitrous.IO Docs</a>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="nav-btn logo hidden-xs">
+            <h1>
+              <a id="logo" href="https://pro.nitrous.io">Nitrous</a>
+            </h1>
+          </li>
+          <li class="hidden-xs hidden-sm hidden-md show-lg"><a href="/categories/tutorials/" {% if page.category contains 'tutorials' %} class="active" {% endif %}>
+             Tutorials
+            </a>
+          </li>
+          <li class="hidden-xs hidden-sm hidden-md show-lg">
+            <a href="mailto:support@nitrous.io">
+              Contact Support
+            </a>
+          </li>
+          <li class="show-sm searchbar">
+            <div id="search">
+              <form class="navbar-form" method="get" action="/search">
+                <input type="text" id="search-query" name="q" class="form-control" autocomplete="off">
+              </form>
+              <section id="search-results" style="display: none;">
+                <ul class="entries"></ul>
+                <p>
+                  {% raw %}
+                  <script id="search-results-template" type="text/mustache">
+                    {{#entries}}
+                      <li>
+                        <p>
+                          <a href="{{url}}">{{title}}</a>
+                        </p>
+                      </li>
+                    {{/entries}}
+                  </script>
+                  {% endraw %}
+                </p>
+              </section>
+            </div>
+          </li>
+          <li class="hidden-xs hidden-sm hidden-md show-lg"><a href="https://pro.nitrous.io/#/login">Log in</a></li>
+          <li class="hidden-xs hidden-sm show-md show-lg">
+            <a href="https://pro.nitrous.io/#/signup" class="signup">
+              Sign up
+            </a>
+          </li>
+          <li class="menu-btn show-xs show-sm hidden-md hidden-lg">
+            <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+          </li>
+        </ul>
       </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse nav navbar-nav navbar-right" role="navigation">
-      <ul class="nav navbar-nav">
-        <li {% if page.mitem contains 'overview' %} class="active" {% endif %}>
-          <a href="{{site.baseurl}}/" onclick="ga('send', 'event', 'Navbar', 'Docs', 'Expo');">Overview</a>
-        </li>
-        <li {% if page.mitem contains 'tutorials' %} class="active" {% endif %}>
-          <a href="{{site.baseurl}}/tutorials" onclick="ga('send', 'event', 'Navbar',
-            'Docs', 'Expo');">Tutorials</a>
-        </li>
-        <li {% if page.mitem contains 'download' %} class="active" {% endif %}>
-          <a href="{{site.baseurl}}/download" onclick="ga('send', 'event', 'Navbar',
-            'Docs', 'Expo');">Download</a>
-        </li>
-      </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>
-        <li><a href="http://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a></li>
-      </ul>-->
-    </nav>
     </div>
-  </header>
-
+  </nav>

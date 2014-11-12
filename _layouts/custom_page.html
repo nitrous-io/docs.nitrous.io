@@ -1,0 +1,14 @@
+{% include head.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 content">
+      <div class="container article">
+        <article>       
+          <h1>{{ page.title | capitalize | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}</h1>
+          {{ content }}
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+{% include footer.html %}

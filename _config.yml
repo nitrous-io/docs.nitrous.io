@@ -1,15 +1,11 @@
-# Site settings
-title: Nitrous Documentation
-email: support@nitrous.io
+name: Nitrous.IO Documentation
+highlighter: pygments
 permalink: /:title
-description: "Nitrous.IO Documentation"
-baseurl: "/docs.nitrous.io"
-url: "http://docs.nitrous.io"
-twitter_username: nitrousio
-github_username:  nitrous-io
-
-# Build settings
-markdown: kramdown
+#category_links: change the category directory
+category_title_prefix: ''
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vendor', 'node_modules', 'gulpfile.js']
 sass:
-    syntax: scss
-    style: compressed
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
+lunr_search:
+  excludes: [index.md, search/index.md, rss.xml, atom.xml, sitemap.xml]

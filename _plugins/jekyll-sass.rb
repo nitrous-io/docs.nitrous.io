@@ -1,4 +1,4 @@
-require "jekyll-sass"
+require "jekyll-sass/version"
 
 module Jekyll
   module Sass

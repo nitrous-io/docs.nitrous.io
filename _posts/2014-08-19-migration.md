@@ -1,8 +1,8 @@
 ---
-layout: docs
+layout: tutorials
 title: Migration
 published: true
-mitem: migration
+categories: tutorials
 ---
 
 # Migration

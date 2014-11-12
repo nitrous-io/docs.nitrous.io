@@ -1,14 +1,14 @@
 {% include head.html %}
-<div class="container bs-docs-container">
-  <!--{% include header.html %}-->
+<div class="container">
   <div class="row">
-    <div class="col-md-9" role="main">
-      <div class="bs-docs-section article menu">
+    <div class="col-md-10 content">
+      <div class="container article">
+        <article>
           {{ content }}
-        </div>
+          {% include share.html %}
+        </article>
       </div>
     </div>
   </div>
-  {% include footer.html %}
- </body>
-</html>
+</div>
+{% include footer.html %}
