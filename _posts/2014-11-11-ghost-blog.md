@@ -16,21 +16,28 @@ category: tutorials
 
 ## Create a Host
 
-[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Host** from the menu.
+[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Host** from the menu. For this example a nano sized host will work.
 
-![New Host]({{site.baseurl}}/images/articles/getting-started/new-host.png)
+![New Host]({{site.baseurl}}/images/articles/ghost/ghost-host.png)
 
-Give your host a name, and select a size (for this example you can select Nano). From there, select **Create** and your new host will be created in a moment.
+After configuring your host, select **Create** and your new host will be available in a moment.
 
 ## Create a Container
 
-* Within a Host you can create multiple containers. A container could be your development environment, a database service, or any repository found within the [Docker Hub Registry](https://registry.hub.docker.com/).*
+*Within a Host you can create multiple containers. A container could be your development environment, a database service, or any repository found within the [Docker Hub Registry](https://registry.hub.docker.com/).*
 
-Navigate to **New > Container** within the menubar. From there title your container  with a name of your choice.  Under the **Image** field, type `dockerfile/ghost` within the "Specify Image Repository" field.
+Navigate to **New > Container** within the menu. Give your container a name such as "Ghost", and under the **Image** field enter `dockerfile/ghost:latest` within the "Specify Image Repository" field.
 
-![Specify Image Reposity]({{site.baseurl}}/images/articles/getting-started/specify-image.png)
+![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/specify-image.png)
+
+Click next to go to step 2. Within this step we will need to add port bindings. Within the Port Bindings section, add the following public port:
+
+* Host Port: 80
+* Container Port: 2368
+
+![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/port-binding.png)
+
+Click **Create** and Nitrous will pull the latest Ghost image with your configurations.
 
 ## 
-
-
 
