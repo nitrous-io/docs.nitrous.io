@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Getting Started with Your Nitrous.IO Environment
+title: Getting Started with Nitrous
 published: true
 category: tutorials
 ---
