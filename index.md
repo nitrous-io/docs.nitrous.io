@@ -21,13 +21,13 @@ And finally, we are leveraging a technology called Docker to implement our conta
 
 Nitrous.IO Sync is supported for Windows, Mac OS X, and Linux.
 
-[Download the right client for your OS here.]({{site.baseurl}}/nitrous-desktop/)
+[Download the right client for your OS here.](/nitrous-desktop/)
 
 ## Tutorials
 
 ### Getting Started
 
-First, let us get familiar with the Nitrous.IO service with [the Getting Started tutorial]({{site.baseurl}}/getting-started) which walks through creating a Rails app on Nitrous.
+First, let us get familiar with the Nitrous.IO service with [the Getting Started tutorial](/getting-started) which walks through creating a Rails app on Nitrous.
 
 ---
 

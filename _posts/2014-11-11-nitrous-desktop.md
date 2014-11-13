@@ -7,7 +7,7 @@ category: tutorials
 
 # Using Nitrous Desktop
 
-*Note: By installing the Nitrous.IO CLI you agree to the terms of [Beta Agreement]({{site.baseurl}}/beta-agreement/)*
+*Note: By installing the Nitrous.IO CLI you agree to the terms of [Beta Agreement](/beta-agreement/)*
 
 ## Download
 
