@@ -6,7 +6,7 @@ layout: custom_page
   {% for post in posts %}
     <li>
       <p>
-        <a href="{{ post.url }}">
+        <a href="{{site.baseurl}}/{{post.url}}">
           {{ post.title | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}
         </a>
       </p>
