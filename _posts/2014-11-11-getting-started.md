@@ -20,21 +20,21 @@ category: tutorials
 
 [Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Host** from the menu.
 
-![New Host](/images/articles/getting-started/new-host.png)
+![New Host]({{site.baseurl}}/images/articles/getting-started/new-host.png)
 
 Give your host a name, and select a size (for this example you can select Nano). Check the Starter Template **Ruby on Rails with Postgres** and click **Create**. This will create a new Rails site with a preconfigured PostgreSQL database.
 
-![Starter Template](/images/articles/getting-started/starter-template.png)
+![Starter Template]({{site.baseurl}}/images/articles/getting-started/starter-template.png)
 
 ## Developing
 
 To develop on your new Rails app you will want to sync your code locally using Nitrous Sync. Start up the app and you should see your new Rails app.
 
-![Nitrous Sync Rails App](/images/articles/getting-started/nitrous-sync-rails-app.png)
+![Nitrous Sync Rails App]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-rails-app.png)
 
 Click on your Rails container and enable file sync. From there you can open the folder to view your code, and you can use which ever editor you are comfortable with to edit your code.
 
-![Nitrous Sync Folder](/images/articles/getting-started/nitrous-sync-folder.png)
+![Nitrous Sync Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-folder.png)
 
 ## Previewing
 
@@ -42,11 +42,11 @@ The starter template has everything configured for you, so you will simply need 
 
 Cd into `~/workspace/app/` and run `rails s` to start the app.
 
-![Terminal](/images/articles/getting-started/terminal.png)
+![Terminal]({{site.baseurl}}/images/articles/getting-started/terminal.png)
 
 Once the app is running, you can preview the app by clicking **Preview** within Nitrous Sync.
 
-![Nitrous Sync Folder](/images/articles/getting-started/nitrous-sync-preview.png)
+![Nitrous Sync Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-preview.png)
 
 You will notice that you are taken to a public URL which you can share for staging and development purposes.
 

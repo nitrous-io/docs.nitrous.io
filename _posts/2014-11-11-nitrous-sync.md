@@ -7,7 +7,7 @@ category: tutorials
 
 # Using Nitrous Sync
 
-*Note: By installing the Nitrous.IO CLI you agree to the terms of [Beta Agreement](http://nitrous-io.github.io/docs.nitrous.io/beta-agreement/)*
+*Note: By installing the Nitrous.IO CLI you agree to the terms of [Beta Agreement]({{site.baseurl}}/beta-agreement/)*
 
 ## Download
 
