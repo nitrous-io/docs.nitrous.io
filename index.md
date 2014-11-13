@@ -5,7 +5,7 @@ mitem: overview
 
 ## About the Beta
 
-Nitrous.IO has always been about making it easier for developers to easily work collaboratively without having to fight with their environment. In this Beta - We are extending our existing environment in a few important ways:
+Nitrous.IO has always been about making it easier for developers to easily work collaboratively without having to fight with their environment. Here are some key benifits which you will notice in the beta:
 
 #### Privileged Mode: Sudo when you need to
 
@@ -21,7 +21,7 @@ And finally, we are leveraging a technology called Docker to implement our conta
 
 Nitrous.IO Sync is supported for Windows, Mac OS X, and Linux.
 
-[Download the right client for your OS here.]({{site.baseurl}}/nitrous-sync/)
+[Download the right client for your OS here.]({{site.baseurl}}/nitrous-desktop/)
 
 ## Tutorials
 
