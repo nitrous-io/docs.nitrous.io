@@ -14,7 +14,7 @@ category: tutorials
 ## Prerequisites
 
 * A Nitrous Pro account
-* Nitrous Pro Sync
+* Nitrous Desktop
 
 ## Create a Host
 
@@ -28,13 +28,13 @@ Give your host a name, and select a size (for this example you can select Nano).
 
 ## Developing
 
-To develop on your new Rails app you will want to sync your code locally using Nitrous Sync. Start up the app and you should see your new Rails app.
+To develop on your new Rails app you will want to sync your code locally using Nitrous Desktop. Start up the app and you should see your new Rails app.
 
-![Nitrous Sync Rails App]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-rails-app.png)
+![Nitrous Desktop Rails App]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-rails-app.png)
 
 Click on your Rails container and enable file sync. From there you can open the folder to view your code, and you can use which ever editor you are comfortable with to edit your code.
 
-![Nitrous Sync Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-folder.png)
+![Nitrous Desktop Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-folder.png)
 
 ## Previewing
 
@@ -44,9 +44,9 @@ Cd into `~/workspace/app/` and run `rails s` to start the app.
 
 ![Terminal]({{site.baseurl}}/images/articles/getting-started/terminal.png)
 
-Once the app is running, you can preview the app by clicking **Preview** within Nitrous Sync.
+Once the app is running, you can preview the app by clicking **Preview** within Nitrous Desktop.
 
-![Nitrous Sync Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-preview.png)
+![Nitrous Desktop Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-preview.png)
 
 You will notice that you are taken to a public URL which you can share for staging and development purposes.
 

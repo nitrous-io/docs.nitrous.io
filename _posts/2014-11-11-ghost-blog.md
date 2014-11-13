@@ -14,9 +14,9 @@ category: tutorials
 * A Nitrous Pro account
 * [Nitrous Sync]({{site.baseurl}}/nitrous-sync)
 
-## Create a Host
+## Create the Ghost Application
 
-[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Host** from the menu. For this example a nano sized host will work.
+[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu. For this example a nano sized host will work.
 
 ![New Host]({{site.baseurl}}/images/articles/ghost/ghost-host.png)
 
@@ -39,5 +39,13 @@ Click next to go to step 2. Within this step we will need to add port bindings. 
 
 Click **Create** and Nitrous will pull the latest Ghost image with your configurations.
 
-## 
+## Previewing
+
+Navigate to your Ghost application within the Dashboard to see the configurations. You will find the publicly available URL of your app under **Hostname**.
+
+![ghost-settings]({{site.baseurl}}/images/articles/ghost/ghost-settings.png)
+
+In this example the **Hostname** is `ghost-2682.nitrouspro.com`. Paste this URL into the browser to view your new Ghost blog.
+
+![ghost-settings]({{site.baseurl}}/images/articles/ghost/ghost-settings.png)
 
