@@ -12,7 +12,7 @@ category: tutorials
 ## Prerequisites
 
 * A Nitrous Pro account
-* [Nitrous Desktop](/nitrous-desktop)
+* [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop)
 
 ## Create the Ghost Application
 
@@ -26,22 +26,22 @@ After configuring your host, select **Create** and your new host will be availab
 
 Navigate to **New > Container** within the menu. Give your container a name such as "Ghost", and under the **Image** field select **Node.JS** under **Nitrous Base Image**.
 
-![Specify Image Reposity](/images/articles/ghost/nodejs-image.png)
+![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/nodejs-image.png)
 
 Click next to go to step 2. Within this step we will need to add port bindings. Within the Port Bindings section, add the following public port:
 
 * Host Port: 80
 * Container Port: 2368
 
-![Specify Image Reposity](/images/articles/ghost/port-binding.png)
+![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/port-binding.png)
 
 Click **Create** and Nitrous will pull the latest Ghost image with your configurations.
 
 ## Sync with Nitrous Desktop
 
-Open up [Nitrous Desktop](/nitrous-desktop) and you will see your Node.JS container. In order to install Ghost on your Node.JS container, click on **Shell** to open up a shell session.
+Open up [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop) and you will see your Node.JS container. In order to install Ghost on your Node.JS container, click on **Shell** to open up a shell session.
 
-![Nitrous Desktop Sync](/images/articles/ghost/nitrous-desktop-sync.png)
+![Nitrous Desktop Sync]({{site.baseurl}}/images/articles/ghost/nitrous-desktop-sync.png)
 
 When the terminal opens your shell connection, run the following commands to download and extract Ghost:
 
@@ -66,9 +66,9 @@ Your Ghost blog should be ready to go at this point. Run your app with npm start
 
 Navigate to your Ghost application within the Dashboard to see the configurations. You will find the publicly available URL of your app under **Hostname**.
 
-![ghost-settings](/images/articles/ghost/ghost-settings.png)
+![ghost-settings]({{site.baseurl}}/images/articles/ghost/ghost-settings.png)
 
 In this example the **Hostname** is `ghost-2682.nitrouspro.com`. Paste this URL into the browser to view your new Ghost blog.
 
-![ghost-settings](/images/articles/ghost/ghost-preview.png)
+![ghost-settings]({{site.baseurl}}/images/articles/ghost/ghost-preview.png)
 

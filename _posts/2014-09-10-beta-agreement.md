@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Nitrous.IO Beta Agreement
-published: true
+category: admin
 ---
 
 ### BETA AGREEMENT
