@@ -7,29 +7,34 @@ category: tutorials
 
 # Using Nitrous Desktop
 
-*Note: By installing the Nitrous.IO CLI you agree to the terms of [Beta Agreement]({{site.baseurl}}/beta-agreement/)*
+*Nitrous Desktop is an app which can be installed on your desktop or laptop. This adds more functionality to your Nitrous account, including File Sync, Shell access, and quick access to previewing your app.*
 
 ## Download
 
 Download Nitrous Desktop for desktop here.
 
 * [Mac OS X](https://pro.nitrous.io/desktop) 
-* [Windows]() 
-* [Linux]() 
+* Windows (Coming Soon)
+* Linux (Coming Soon)
 
-## Usage
+## Mac OS X Installation
 
-### Mac OS X
+To install, [Download](https://pro.nitrous.io/desktop) the archived app, and extract it to your Applications folder.
 
-[Download]() and extract Nitrous Desktop to your `Applications` folder and open the app. You will be prompted to provide your login credentials at this point. If you are receiving a permissions message and are unable to open Nitrous Desktop you may need to adjust your security settings. Within **System Preferences > Security & Privacy**, ensure the option **Allow apps downloaded from: Anywhere** is selected.
+When you first open the app you may receive a security message which denies the app to open. In this case you may need to adjust your security settings. Within **System Preferences > Security & Privacy**, ensure the option **Allow apps downloaded from: Anywhere** is selected.
 
-**File Sync**: When file sync is enabled, a folder titled `Nitrous/` is created within your home folder. Project folders will be synced within `~/Nitrous/`.
+Once the app is opened, you will be prompted to provide your login credentials. From there you will see the following options:
 
-### Windows
+**File Sync**: When file sync is enabled, a folder titled `Nitrous/` is created within your local home folder. Any application you have created within Nitrous will display here, and if the Application contains a directory `~/workspace` you will have the option to sync the data within that folder. All Nitrous Base images are configured to sync instantly.
 
-[Download]() and extract Nitrous Desktop to your `Program Files` folder and run the executable. You will be prompted to provide your login credentials at this point.
+Click on the File Sync button to begin syncing. This will continue to monitor and sync any future changes.
 
-**File Sync**: When file sync is enabled, a folder titled `Nitrous/` is created within your Documents folder. Project folders will be synced within `My Documents\Nitrous\`.
+![Nitrous Desktop Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-folder.png)
 
-### Linux
+**Open Folder**: This will open Finder to the location of your `Nitrous/` folder. You can use the editor of your choice to edit the files and they will instantly sync to the app on Nitrous.
 
+**Shell**: The shell option will automatically open up your terminal and will SSH into your Application.
+
+![Shell]({{site.baseurl}}/images/articles/getting-started/shell.png)
+
+**Preview**: This link will open up your app's public URL within your default web browser.
