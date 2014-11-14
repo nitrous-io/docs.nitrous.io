@@ -11,7 +11,6 @@ category: tutorials
 
 ## Prerequisites
 
-* A Nitrous Pro account
 * [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop)
 
 ## Create the Ghost Application

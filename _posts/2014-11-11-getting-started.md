@@ -13,16 +13,13 @@ category: tutorials
 
 ## Prerequisites
 
-* A Nitrous Pro account
-* Nitrous Desktop
+* [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop)
 
-## Create a Host
+## Create a New Application
 
-[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Host** from the menu.
+[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu.
 
-![New Host]({{site.baseurl}}/images/articles/getting-started/new-host.png)
-
-Give your host a name, and select a size (for this example you can select Nano). Check the Starter Template **Ruby on Rails with Postgres** and click **Create**. This will create a new Rails site with a preconfigured PostgreSQL database.
+Give your application a name, and select a size (for this example you can select Nano). Check the Starter Template **Ruby on Rails with Postgres** and click **Create**. This will create a new Rails site with a preconfigured PostgreSQL database.
 
 ![Starter Template]({{site.baseurl}}/images/articles/getting-started/starter-template.png)
 
