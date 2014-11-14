@@ -2,7 +2,8 @@ name: Nitrous.IO Documentation
 highlighter: pygments
 permalink: /:title
 #category_links: change the category directory
-baseurl: /docs.nitrous.io
+destination: ./_site/docs
+baseurl: /docs
 category_title_prefix: ''
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vendor', 'node_modules', 'gulpfile.js']
 sass:
