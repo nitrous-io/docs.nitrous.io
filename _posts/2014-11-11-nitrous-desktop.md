@@ -13,13 +13,13 @@ category: tutorials
 
 Download Nitrous Desktop for desktop here.
 
-* [Mac OS X](https://pro.nitrous.io/desktop) 
-* Windows (Coming Soon)
-* Linux (Coming Soon)
+* [Mac OS X](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip) 
+* [Windows](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip)
+* [Linux](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip)
 
 ## Mac OS X Installation
 
-To install, [Download](https://pro.nitrous.io/desktop) the archived app, and extract it to your Applications folder.
+To install, [Download](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip) the archived app, and extract it to your Applications folder.
 
 When you first open the app you may receive a security message which denies the app to open. In this case you may need to adjust your security settings. Within **System Preferences > Security & Privacy**, ensure the option **Allow apps downloaded from: Anywhere** is selected.
 
@@ -38,3 +38,11 @@ Click on the File Sync button to begin syncing. This will continue to monitor an
 ![Shell]({{site.baseurl}}/images/articles/getting-started/shell.png)
 
 **Preview**: This link will open up your app's public URL within your default web browser.
+
+## Windows Installation
+
+http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip
+
+## Linux Installation
+
+http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip
