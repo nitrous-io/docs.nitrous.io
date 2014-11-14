@@ -25,6 +25,10 @@
               <a id="logo" href="https://pro.nitrous.io">Nitrous</a>
             </h1>
           </li>
+          <li class="hidden-xs hidden-sm hidden-md show-lg"><a href="{{site.baseurl}}/" {% if page.category contains 'tutorials' %} class="active" {% endif %}>
+             Overview
+            </a>
+          </li>
           <li class="hidden-xs hidden-sm hidden-md show-lg"><a href="{{site.baseurl}}/categories/tutorials/" {% if page.category contains 'tutorials' %} class="active" {% endif %}>
              Tutorials
             </a>
@@ -36,7 +40,7 @@
           </li>
           <li class="show-sm searchbar">
             <div id="search">
-              <form class="navbar-form" method="get" action="/search">
+              <form class="navbar-form" method="get" action="/docs/search">
                 <input type="text" id="search-query" name="q" class="form-control" autocomplete="off">
               </form>
               <section id="search-results" style="display: none;">
