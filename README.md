@@ -23,11 +23,8 @@ Editing: Work within the **gh-pages** branch. For CSS alterations, work within t
 
 Publishing:
 
-* Add the 'publish' alias to the end of your `.git/config` file:
+* There is a Rakefile to help sync `_sites` to the `gh-pages` branch.
 
 ```bash
-[alias]
-publish = "!f() { git checkout gh-pages && echo '[BUILD]' && jekyll build && sass css/syntax.scss css/syntax.css --style compressed && sass css/docs.scss css/docs.css --style compressed && sass css/font-awesome/css/font-awesome.scss css/font-awesome/css/font-awesome.css --style compressed && sass css/bootstrap.scss css/bootstrap.css --style compressed && sass css/main.scss css/main.css --style compressed && echo '[COMMIT]' && git add -A && git commit -m 'Build website' && echo && echo '[PUSH]' && git push origin gh-pages; }; f"
+rake publish
 ```
-
-* After making changes, simply run `git publish` to publish to the gh-pages branch. This will automate `git add`, `git commit`, and run Sass.
