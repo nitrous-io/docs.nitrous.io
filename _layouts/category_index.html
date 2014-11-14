@@ -7,20 +7,7 @@ layout: custom_page
     <li>
       <p>
         <a href="{{site.baseurl}}{{post.url}}">
-          {{ post.title | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}
-        </a>
-      </p>
-    </li>
-  {% endfor %}
-  <h2>
-  Additional Resources
-  </h2>
-  {% assign posts = site.categories[admin] %}
-  {% for post in posts %}
-    <li>
-      <p>
-        <a href="{{site.baseurl}}{{post.url}}">
-          {{ post.title | replace: 'and', '&' | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}
+          {{ post.title | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH' | replace: '-', ' '}}
         </a>
       </p>
     </li>
