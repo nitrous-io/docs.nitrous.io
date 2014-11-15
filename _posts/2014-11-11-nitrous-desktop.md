@@ -17,15 +17,29 @@ Download Nitrous Desktop for desktop here.
 * [Windows](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip)
 * [Linux](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip)
 
-## Mac OS X Installation
+## Install
 
-To install, [Download](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip) the archived app, and extract it to your Applications folder.
+### Mac OS X
+
+To install, [download](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip) the archived app and extract it to your Applications folder.
 
 When you first open the app you may receive a security message which denies the app to open. In this case you may need to adjust your security settings. Within **System Preferences > Security & Privacy**, ensure the option **Allow apps downloaded from: Anywhere** is selected.
 
-Once the app is opened, you will be prompted to provide your login credentials. From there you will see the following options:
+### Windows
 
-**File Sync**: When file sync is enabled, a folder titled `Nitrous/` is created within your local home folder. Any application you have created within Nitrous will display here, and if the Application contains a directory `~/workspace` you will have the option to sync the data within that folder. All Nitrous Base images are configured to sync instantly.
+To install, [download](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip) the archived app and extract it to your Program Files directory. 
+
+You should now have access to `C:\Program Files\Nitrous\nitrous.exe`. Create a desktop shortcut of this if you wish and run the executable.
+
+### Linux
+
+To install, [download](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip) the archived app and extract it.
+
+## Usage 
+
+When the Nitrous Desktop app is first opened, you will be prompted to provide your login credentials. From there you will see the following options:
+
+**File Sync**: When file sync is enabled, a folder titled `Nitrous/` is created within your local home folder (~/Nitrous for Mac/Linux, C:\Users\User_Name\Nitrous for Windows). Any application you have created within Nitrous will display here, and if the Application contains a directory `~/workspace` you will have the option to sync the data within that folder. All Nitrous Base images are configured to sync instantly.
 
 Click on the File Sync button to begin syncing. This will continue to monitor and sync any future changes.
 
@@ -38,11 +52,3 @@ Click on the File Sync button to begin syncing. This will continue to monitor an
 ![Shell]({{site.baseurl}}/images/articles/getting-started/shell.png)
 
 **Preview**: This link will open up your app's public URL within your default web browser.
-
-## Windows Installation
-
-http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip
-
-## Linux Installation
-
-http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip
