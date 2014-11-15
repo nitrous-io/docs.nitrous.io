@@ -13,7 +13,7 @@ category: tutorials
 
 Download Nitrous Desktop for desktop here.
 
-* [Mac OS X](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip) 
+* [Mac OS X](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip)
 * [Windows](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip)
 * [Linux](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip)
 
@@ -27,15 +27,17 @@ When you first open the app you may receive a security message which denies the 
 
 ### Windows
 
-To install, [download](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip) the archived app and extract it to your Program Files directory. 
+To install, [download](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip) the archived app and extract it to your Program Files directory.
 
 You should now have access to `C:\Program Files\Nitrous\nitrous.exe`. Create a desktop shortcut of this if you wish and run the executable.
 
 ### Linux
 
-To install, [download](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip) the archived app and extract it.
+To install, [download](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip) the archived app and extract it
+to the directory of your choice. Run the app by navigating into the Nitrous directory through your terminal, and run
+`./nitrous`.
 
-## Usage 
+## Usage
 
 When the Nitrous Desktop app is first opened, you will be prompted to provide your login credentials. From there you will see the following options:
 
