@@ -23,8 +23,6 @@ Download Nitrous Desktop for desktop here.
 
 To install, [download](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip) the archived app and extract it to your Applications folder.
 
-When you first open the app you may receive a security message which denies the app to open. In this case you may need to adjust your security settings. Within **System Preferences > Security & Privacy**, ensure the option **Allow apps downloaded from: Anywhere** is selected.
-
 ### Windows
 
 To install, [download](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip) the archived app and extract it to your Program Files directory.
