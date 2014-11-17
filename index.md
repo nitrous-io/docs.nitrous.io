@@ -3,17 +3,11 @@ layout: default
 title: Getting Started with Nitrous
 ---
 
-# Getting Started with Your Nitrous Dev Environment
+## Getting Started
 
-## Overview
+*
 
-*In this tutorial you will create a Ruby on Rails app, and will learn the basic workflow for developing on Nitrous.*
-
-## Prerequisites
-
-* [Nitrous Sync]({{site.baseurl}}/nitrous-sync)
-
-## Create a New Application
+## Creating Your First App
 
 [Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu.
 
@@ -23,7 +17,7 @@ Give your application a name, and select a size (for this example you can select
 
 ## Developing
 
-To develop on your new Rails app you will want to sync your code locally using Nitrous Desktop. Start up the app and you should see your new Rails app.
+To develop on your new Rails app you will want to sync your code locally using [Nitrous Sync]({{site.baseurl}}/nitrous-sync). Once Nitrous Sync has been installed on your local machine, login and you should see your new Rails app.
 
 ![Nitrous Desktop Rails App]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-rails-app.png)
 
