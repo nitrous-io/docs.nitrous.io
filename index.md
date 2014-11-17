@@ -1,34 +1,47 @@
 ---
 layout: default
-mitem: overview
+title: Getting Started with Nitrous
 ---
 
-## About the Beta
+# Getting Started with Your Nitrous Dev Environment
 
-Nitrous.IO has always been about making it easier for developers to easily work collaboratively without having to fight with their environment. Here are some key benifits which you will notice in the beta:
+## Overview
 
-#### Privileged Mode: Sudo when you need to
+*In this tutorial you will create a Ruby on Rails app, and will learn the basic workflow for developing on Nitrous.*
 
-First, many customers like you asked for the ability to be able to run in privileged mode. Now you can. Install any packages that you need to do - imagemagick, PHP tools or even specific visualization and data-science libraries.
+## Prerequisites
 
-#### Snapshots: Create and Share Entire Environments
-Second, this upgrade allows teams to snapshot the entire set of installed tools and configured environment. This means that anyone on the team can create and share their templates and not just the four available from Nitrous.IO.
+* [Nitrous Sync]({{site.baseurl}}/nitrous-sync)
 
-#### Docker Support: Leverage the Ecosystem
-And finally, we are leveraging a technology called Docker to implement our containers. If you already have a DockerFile or Image you can use it with Nitrous.IO. If you don't already use Docker - no problem you can still enjoy all the benefits of  Nitrous.IO's easy to use environments without having to learn yet another set of tools.
+## Create a New Application
 
-## Install
+[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu.
 
-Nitrous.IO Sync is supported for Windows, Mac OS X, and Linux.
+Give your application a name, and select a size (for this example you can select Nano). Check the Starter Template **Ruby on Rails with Postgres** and click **Create**. This will create a new Rails site with a preconfigured PostgreSQL database.
 
-[Download the right client for your OS here.]({{site.baseurl}}/nitrous-desktop/)
+![Starter Template]({{site.baseurl}}/images/articles/getting-started/starter-template.png)
 
-## Tutorials
+## Developing
 
-### Getting Started
+To develop on your new Rails app you will want to sync your code locally using Nitrous Desktop. Start up the app and you should see your new Rails app.
 
-First, let us get familiar with the Nitrous.IO service with [the Getting Started tutorial]({{site.baseurl}}/getting-started) which walks through creating a Rails app on Nitrous.
+![Nitrous Desktop Rails App]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-rails-app.png)
 
----
+Click on your Rails container and enable file sync. From there you can open the folder to view your code, and you can use which ever editor you are comfortable with to edit your code.
 
-If you run into any issue or have suggestions, we're available at: [support@nitrous.io](mailto:support@nitrous.io)
+![Nitrous Desktop Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-folder.png)
+
+## Previewing
+
+The starter template has everything configured for you, so you will simply need to start your Rails app. Within the desktop app, click on the Rails container followed by clicking the **Shell** link. This will open up your local terminal and will shell directly into your box.
+
+Cd into `~/workspace/app/` and run `rails s` to start the app.
+
+![Terminal]({{site.baseurl}}/images/articles/getting-started/terminal.png)
+
+Once the app is running, you can preview the app by clicking **Preview** within Nitrous Desktop.
+
+![Nitrous Desktop Folder]({{site.baseurl}}/images/articles/getting-started/nitrous-sync-preview.png)
+
+You will notice that you are taken to a public URL which you can share for staging and development purposes.
+

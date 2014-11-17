@@ -13,7 +13,7 @@ category: tutorials
 
 ## Prerequisites
 
-* [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop)
+* [Nitrous Sync]({{site.baseurl}}/nitrous-sync)
 
 ## Create a New Application
 

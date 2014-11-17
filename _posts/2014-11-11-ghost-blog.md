@@ -11,7 +11,7 @@ category: tutorials
 
 ## Prerequisites
 
-* [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop)
+* [Nitrous Sync]({{site.baseurl}}/nitrous-sync)
 
 ## Create the Ghost Application
 
@@ -38,9 +38,9 @@ Click **Create** and Nitrous will pull the latest Ghost image with your configur
 
 ## Sync with Nitrous Desktop
 
-Open up [Nitrous Desktop]({{site.baseurl}}/nitrous-desktop) and you will see your Node.JS container. In order to install Ghost on your Node.JS container, click on **Shell** to open up a shell session.
+Open up [Nitrous Sync]({{site.baseurl}}/nitrous-sync) and you will see your Node.JS container. In order to install Ghost on your Node.JS container, click on **Shell** to open up a shell session.
 
-![Nitrous Desktop Sync]({{site.baseurl}}/images/articles/ghost/nitrous-desktop-sync.png)
+![Nitrous Sync]({{site.baseurl}}/images/articles/ghost/nitrous-desktop-sync.png)
 
 When the terminal opens your shell connection, run the following commands to download and extract Ghost:
 
