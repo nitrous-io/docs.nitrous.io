@@ -13,9 +13,9 @@ category: tutorials
 
 Download Nitrous Sync for desktop here.
 
-* [Mac OS X](http://nitrous-pro-app.s3.amazonaws.com/mac/Nitrous.app-0.1.4.zip)
-* [Windows](http://nitrous-pro-app.s3.amazonaws.com/windows/nitrous-0.1.4.zip)
-* [Linux](http://nitrous-pro-app.s3.amazonaws.com/linux/nitrous-0.1.4.zip)
+* [Mac OS X](http://nitrous-pro-app.s3-website-us-east-1.amazonaws.com/mac/download.html)
+* [Windows](http://nitrous-pro-app.s3-website-us-east-1.amazonaws.com/windows/download.html)
+* [Linux](http://nitrous-pro-app.s3-website-us-east-1.amazonaws.com/windows/download.html)
 
 ## Install
 
