@@ -5,10 +5,6 @@ title: Getting Started with Nitrous
 
 ## Getting Started
 
-*
-
-## Creating Your First App
-
 [Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu.
 
 Give your application a name, and select a size (for this example you can select Nano). Check the Starter Template **Ruby on Rails with Postgres** and click **Create**. This will create a new Rails site with a preconfigured PostgreSQL database.
