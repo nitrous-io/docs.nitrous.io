@@ -235,6 +235,10 @@ ul.toc {
     padding-bottom: 0;
     border-bottom: none;
   }
+
+  &:first-of-type {
+    padding-top: 0;
+  }
 }
 
 .toc.entries {
@@ -263,10 +267,6 @@ ul.toc {
   li {
     border-bottom: 1px solid #eee;
     padding: 8px 0;
-
-    &:first-of-type {
-      padding-top: 0;
-    }
 
     p {
       margin: 0;
