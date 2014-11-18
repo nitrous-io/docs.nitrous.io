@@ -23,7 +23,10 @@ After configuring your host, select **Create** and your new host will be availab
 
 *Within a Host you can create multiple containers. A container could be your development environment, a database service, or any repository found within the [Docker Hub Registry](https://registry.hub.docker.com/). By using a Nitrous Base image you will have instant access to sync projects locally.*
 
-Navigate to **New > Container** within the menu. Give your container a name such as "Ghost", and under the **Image** field select **Node.JS** under **Nitrous Base Image**.
+Before creating a Container, enable Advanced Options for your account. Navigate in the menu to **Account > Account
+Settings** and enable **Show Advanced Options**.
+
+Niext, navigate to **New > Container** within the menu. Give your container a name such as "Ghost", and under the **Image** field select **Node.JS** under **Nitrous Base Image**.
 
 ![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/nodejs-image.png)
 
