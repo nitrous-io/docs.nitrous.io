@@ -79,19 +79,19 @@ ul.toc {
   padding-left: 0;
   margin-left: -8px;
   li {
-    padding:0;
+    padding: 1rem 0;
 
     a {
       padding: 6px 10px;
       display: block;
+      font-size: 1.6rem;
       @include border-radius(3px);
       i {
         margin-right: 8px;
       }
 
       &:hover {
-        background: #f3f3f8;
-        color: #357;
+        color: #428bca;
         text-decoration: none;
       }
     }
@@ -237,11 +237,23 @@ ul.toc {
   }
 }
 
+.toc.entries {
+  li {
+    &:first-of-type {
+      border-top: 1px solid #eee;
+    }
+  }
+}
+
 #search-results, .entries {
   a {
     color: black;
     font-weight: bold;
-  }
+    &:hover{
+      color: #428bca;
+      text-decoration: none;
+     }
+   }
 
   ul {
     list-style: none;
@@ -258,13 +270,6 @@ ul.toc {
 
     p {
       margin: 0;
-    }
-  }
-
-
-  a {
-    &:hover {
-      color: black;
     }
   }
 }

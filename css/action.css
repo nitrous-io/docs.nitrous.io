@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'EurostileLTPro-BoldEx2';
-  src: url('/webfonts/2650DC_0_0.eot');
-  src: url('/webfonts/2650DC_0_0.eot?#iefix') format('embedded-opentype'), url('/webfonts/2650DC_0_0.woff') format('woff'), url('/webfonts/2650DC_0_0.ttf') format('truetype'); }
+  src: url('/docs/webfonts/2650DC_0_0.eot');
+  src: url('/docs/webfonts/2650DC_0_0.eot?#iefix') format('embedded-opentype'), url('/docs/webfonts/2650DC_0_0.woff') format('woff'), url('/docs/webfonts/2650DC_0_0.ttf') format('truetype'); }
 
 #logo {
   font-size: 24px;
@@ -58,17 +58,17 @@ ul.toc {
   padding-left: 0;
   margin-left: -8px; }
   ul.toc li {
-    padding: 0; }
+    padding: 1rem 0; }
     ul.toc li a {
       padding: 6px 10px;
       display: block;
+      font-size: 1.6rem;
       -o-border-radius: 3px;
       border-radius: 3px; }
       ul.toc li a i {
         margin-right: 8px; }
       ul.toc li a:hover {
-        background: #f3f3f8;
-        color: #357;
+        color: #428bca;
         text-decoration: none; }
 
 .navbar {
@@ -172,9 +172,15 @@ form.navbar-form {
   padding-bottom: 0;
   border-bottom: none; }
 
+.toc.entries li:first-of-type {
+  border-top: 1px solid #eee; }
+
 #search-results a, .entries a {
   color: black;
   font-weight: bold; }
+  #search-results a:hover, .entries a:hover {
+    color: #428bca;
+    text-decoration: none; }
 #search-results ul, .entries ul {
   list-style: none;
   padding: 0; }
@@ -185,8 +191,6 @@ form.navbar-form {
     padding-top: 0; }
   #search-results li p, .entries li p {
     margin: 0; }
-#search-results a:hover, .entries a:hover {
-  color: black; }
 
 .header-title {
   color: white;
@@ -638,6 +642,39 @@ ul.social-sharing #sbYC a:hover {
   -webkit-transform: translateX(14rem);
   -ms-transform: translateX(14rem);
   transform: translateX(14rem); }
+
+/* Footer */
+#app-footer .container {
+  border-top: 1px solid #e0e0e0;
+  padding: 16px;
+  color: #616161;
+  width: 1070px;
+  margin: 0 auto; }
+
+.page-footer .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+   display: flex;
+   font-size: 14px;
+   margin-top: 26px; }
+
+.page-footer .container ul {
+  list-style: none; }
+
+.page-footer .container p, .page-footer .container ul, .page-footer .container li {
+  display: inline;
+  padding: 0 1rem;
+  margin: 0; }
+
+.page-footer .container .right {
+  text-align: right; }
+
+.page-footer .container .left, .page-footer .container .right {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
 
 /* Responsive */
 @media (max-width: 768px) {
