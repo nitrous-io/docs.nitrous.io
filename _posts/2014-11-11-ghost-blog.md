@@ -5,7 +5,7 @@ published: true
 category: tutorials
 ---
 
-# Creat a Ghost Blog
+# Create a Ghost Blog
 
 *This tutorial introduces you to key Nitrous.IO concepts by walking you through the process of setting up the blogging platform, Ghost, on Nitrous.IO.*
 
