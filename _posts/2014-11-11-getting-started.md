@@ -5,7 +5,7 @@ published: true
 category: tutorials
 ---
 
-## Getting Started
+# Getting Started
 
 [Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu.
 
