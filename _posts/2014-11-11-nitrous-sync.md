@@ -7,7 +7,7 @@ category: tutorials
 
 # Using Nitrous Sync
 
-*Nitrous Sync is an app which can be installed on your desktop or laptop. This adds more functionality to your Nitrous account, including File Sync, Shell access, and quick access to previewing your app.*
+<p class="intro">Nitrous Sync is an app which can be installed on your desktop or laptop. This adds more functionality to your Nitrous account, including File Sync, Shell access, and quick access to previewing your app.</p>
 
 ## Download
 

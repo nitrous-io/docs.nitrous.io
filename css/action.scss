@@ -29,9 +29,19 @@
 }
 
 body, body p{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.45em;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+
+  .intro {
+    background: #F2F3F7;
+    padding: 1.4em;
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
 h1 {
@@ -470,11 +480,10 @@ h5.note {
 
 blockquote{
   padding: 20px;
-  padding-left: 60px;
-  border-left: 5px solid #80E1FF;
-  background: #C0F5FF url(/docs/images/info-icon.png) no-repeat left center;
+  margin: 40px 0 20px 0;
+  border-left: 20px solid #F2F3F7;
   p{
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
