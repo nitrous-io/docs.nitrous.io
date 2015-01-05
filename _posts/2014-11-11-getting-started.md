@@ -25,7 +25,7 @@ The quickest way to start coding is to connect to the Web IDE.
 
 After creating a box template, click the **IDE** link found in the bottom right of your dashboard.
 
-![Starter Template]({{site.baseurl}}/images/articles/getting-started/open-ide.png)
+![Open IDE]({{site.baseurl}}/images/articles/getting-started/open-ide.png)
 
 Within the IDE you will see a file browser, text editor, and a console. Your development environment will come with a `~/workspace` folder which you can start developing within instantly.
 
