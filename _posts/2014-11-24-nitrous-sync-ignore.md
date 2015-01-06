@@ -5,15 +5,13 @@ published: true
 category: tutorials
 ---
 
+# Nitrous Sync - Ignoring Files
+
+<p class="intro">You can configure Nitrous Sync to ignore files and folders when syncing. This will allow for faster syncing if your project generates files which you don't need to edit locally.</p>
+
 ## Create a .syncignore file
 
-You can configure Nitrous Sync to ignore files and folders when syncing. To determine which files you want to ignore you can either add a `.syncignore` file within your container's `~/workspace/` folder **OR** within your local project folder which syncs to Nitrous.
-
-Follow these steps to create a `.syncignore` file within the container:
-
-1. Connect to the terminal of your Nitrous container and cd into the `~/workspace` folder.
-2. Enter `touch .syncignore` to create a `.syncignore` file.
-3. To edit the file within the terminal, run `nano .syncignore`.
+To determine which files you want to ignore, add a `.syncignore` file within your Nitrous box's `~/workspace/` folder.
 
 Files matching the rules entered into the `.syncignore` file will no longer sync between the container and your local machine.
 

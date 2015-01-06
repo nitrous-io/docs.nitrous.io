@@ -9,26 +9,16 @@ category: tutorials
 
 <p class="intro">This tutorial introduces you to key Nitrous.IO concepts by walking you through the process of setting up the blogging platform, Ghost, on Nitrous.IO.</p>
 
-## Prerequisites
-
-* [Nitrous Sync]({{site.baseurl}}/nitrous-sync)
-
 ## Create the Ghost Application
 
-[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu. For this example a nano sized host will work.
-
-After configuring your host, select **Create** and your new host will be available in a moment.
-
-## Create a Container
-
-*Within a Host you can create multiple containers. A container could be your development environment, a database service, or any repository found within the [Docker Hub Registry](https://registry.hub.docker.com/). By using a Nitrous Base image you will have instant access to sync projects locally.*
-
-Before creating a Container, enable Advanced Options for your account. Navigate in the menu to **Account > Account
+>Before creating a new application, enable Advanced Options for your account. Navigate in the menu to **Account > Account
 Settings** and enable **Show Advanced Options**.
 
-Niext, navigate to **New > Container** within the menu. Give your container a name such as "Ghost", and under the **Image** field select **Node.JS** under **Nitrous Base Image**.
+[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu. 
 
-![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/nodejs-image.png)
+Title your app "Ghost", and select the **Vanilla** template.
+
+![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/vanilla-template.png)
 
 Click next to go to step 2. Within this step we will need to add port bindings. Within the Port Bindings section, add the following public port:
 
@@ -37,15 +27,17 @@ Click next to go to step 2. Within this step we will need to add port bindings. 
 
 ![Specify Image Reposity]({{site.baseurl}}/images/articles/ghost/port-binding.png)
 
-Click **Create** and Nitrous will pull the latest Ghost image with your configurations.
+Click **Create** and a new Ubuntu installation will be built with some development tools pre-installed.
 
-## Sync with Nitrous Desktop
+## Install Node.JS
 
-Open up [Nitrous Sync]({{site.baseurl}}/nitrous-sync) and you will see your Node.JS container. In order to install Ghost on your Node.JS container, click on **Shell** to open up a shell session.
+After the box is created, open the Web IDE. The first thing you will want to do is to install Node.JS. Run this command within the console to install Node.JS:
 
-![Nitrous Sync]({{site.baseurl}}/images/articles/ghost/nitrous-desktop-sync.png)
+$ sudo apt-get install -y nodejs
 
-When the terminal opens your shell connection, run the following commands to download and extract Ghost:
+## Install and Configure Ghost
+
+Next, run the following commands to download and extract Ghost:
 
     $ cd workspace/
     $ wget https://ghost.org/zip/ghost-latest.zip && unzip ghost-latest.zip -d ~/workspace/app && rm -f ghost-latest.zip
@@ -64,13 +56,9 @@ Your Ghost blog should be ready to go at this point. Run your app with npm start
 
     $ npm start
 
-## Previewing
+## Preview the Blog
 
-Navigate to your Ghost application within the Dashboard to see the configurations. You will find the publicly available URL of your app under **Hostname**.
-
-![ghost-settings]({{site.baseurl}}/images/articles/ghost/ghost-settings.png)
-
-In this example the **Hostname** is `ghost-2682.nitrouspro.com`. Paste this URL into the browser to view your new Ghost blog.
+To preview your app, navigate to **Preview > Port 80** within the menu bar. A new tab will open at this point with your new Ghost blog.
 
 ![ghost-settings]({{site.baseurl}}/images/articles/ghost/ghost-preview.png)
 

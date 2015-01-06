@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: How to Install Nitrous Sync
+title: Getting Started With Nitrous Sync
 published: true
 category: tutorials
 ---
