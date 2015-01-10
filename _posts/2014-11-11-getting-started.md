@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started with Nitrous
 published: true
-category: tutorials
+category: [ruby, rails, tutorials, getting-started]
 ---
 
 # Getting Started

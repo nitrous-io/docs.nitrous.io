@@ -2,7 +2,7 @@
 layout: docs
 title: Create a Ghost Blog
 published: true
-category: tutorials
+category: [ghost, node.js, tutorials]
 ---
 
 # Create a Ghost Blog

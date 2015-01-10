@@ -4,12 +4,13 @@
   {% raw %}
   <script id="search-results-template" type="text/mustache">
     {{#entries}}
-      <li>
-        <p>
-          <a href="{{baseurl}}{{url}}">{{title}}</a>
-          {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-       </p>
-      </li>
+      <div class="post">
+      <h3 class='post-title'><a href="{{site.baseurl}}{{post.url}}">{{title}}</a></h3>
+      <p class="small text-muted">
+        Published on {{#date}}<time datetime="{{pubdate}}" pubdate>{{displaydate}}</time>{{/date}}</time>
+      </p>
+    </div>
+    <hr />
     {{/entries}}
   </script>
   {% endraw %}

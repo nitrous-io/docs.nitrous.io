@@ -22,11 +22,14 @@
       <div>
         <ul class="nav navbar-nav">
           <li class="nav-btn logo hidden-xs">
-            <h1>
-              <a id="logo" href="{{site.baseurl}}/">Nitrous</a>
+            <h1 class="logo">
+              <a href="{{site.baseurl}}/">
+                <span>Nitrous</span>
+                <small>Docs</small>
+              </a>
             </h1>
           </li>
-          <li class="hidden-xs hidden-sm hidden-md show-lg"><a href="{{site.baseurl}}/categories/tutorials" {% if page.category contains 'tutorials' %} class="active" {% endif %}>
+          <li class="hidden-xs hidden-sm hidden-md show-lg"><a href="{{site.baseurl}}/" {% if page.category contains 'tutorials' %} class="active" {% endif %}>
              Tutorials
             </a>
           </li>

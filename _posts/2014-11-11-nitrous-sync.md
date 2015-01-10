@@ -2,7 +2,7 @@
 layout: docs
 title: Getting Started With Nitrous Sync
 published: true
-category: tutorials
+category: [sync, desktop]
 ---
 
 # Using Nitrous Sync

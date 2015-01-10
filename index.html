@@ -1,0 +1,46 @@
+---
+layout: tutorial_list
+title: Nitrous Documentation
+---
+
+{% for post in paginator.posts %}
+  {% if post.draft %}
+  {% else %}
+    <div class="post">
+      <h3 class='post-title'><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+      <p class="small text-muted">
+        <time pubdate datetime="{{ post.date | date: "%d %B %Y" }}">{{ post.date | date: "%d %B %Y" }}
+          {% if post.category %}
+            | tagged in  
+            {% for cat in post.categories %}
+              <a href="{{site.baseurl}}/tutorials/{{cat[]}}">{{ cat[] }}</a>
+            {% endfor %}
+          {% endif %}
+        </time>
+      </p>
+    </div>
+    <hr />
+  {% endif %}
+{% endfor %}
+<div id="pagination">
+  <section id="older">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <div class="pnav older pull-left">
+        <a href="/docs/"> Previous Page<i class="icon-angle-right"></i></a>
+      </div>
+      {% else %}
+    <div class="pnav older pull-left">
+      <a href="/docs/page{{ paginator.previous_page }}"><i class="icon-angle-left"></i> Previous Page</a>
+    </div>
+    {% endif %}
+  {% endif %}
+  </section>
+  <section id="newer">
+    {% if paginator.next_page %}
+      <div class="pnav newer pull-right">
+        <a href="/docs/page{{ paginator.next_page }}">Next Page <i class="icon-angle-right"></i></a>
+      </div>
+    {% endif %}
+  </section>
+</div>

@@ -1,0 +1,29 @@
+{% include head.html %}
+<div class="container">
+	<div class="categories-bar hidden-xs hidden-sm show-md show-lg">
+			<ul class="categories">
+				<li>
+					<a data-history="true" data-remote="true" href="{{site.baseurl}}/tutorials/getting-started">Getting Started</a>
+				</li>
+				<li>
+					<a data-history="true" data-remote="true" href="{{site.baseurl}}/tutorials/ssh">SSH</a>
+				</li>
+				<li>
+					<a data-history="true" data-remote="true" href="{{site.baseurl}}/tutorials/sync">Sync</a>
+				</li>
+				<li>
+					<a data-history="true" data-remote="true" href="{{site.baseurl}}/tutorials/tutorials">Tutorials</a>
+				</li>
+			</ul>
+	</div>
+  <div class="row">
+    <div class="col-md-10 content">
+      <div class="container article">
+        <article>
+          {{ content }}
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+{% include footer.html %}

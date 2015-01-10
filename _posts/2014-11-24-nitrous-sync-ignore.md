@@ -2,7 +2,7 @@
 layout: docs
 title: Nitrous Sync - Ignoring Files
 published: true
-category: tutorials
+category: [sync, desktop]
 ---
 
 # Nitrous Sync - Ignoring Files
