@@ -4,12 +4,19 @@ layout: custom_page
 <ul class="toc entries">
   {% assign posts = site.categories[page.category] %}
   {% for post in posts %}
-    <li>
-      <p>
-        <a href="{{site.baseurl}}{{post.url}}">
-          {{ post.title | replace: 'Faq', 'FAQ' | replace: 'Ssh', 'SSH'}}
-        </a>
+    <div class="post">
+      <h3 class='post-title'><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+      <p class="small text-muted">
+        <time pubdate datetime="{{ post.date | date: "%d %B %Y" }}">{{ post.date | date: "%d %B %Y" }}
+          {% if post.category %}
+            | tagged in  
+            {% for cat in post.categories %}
+              <a href="{{site.baseurl}}/tutorials/{{cat[]}}">{{ cat[] }}</a>
+            {% endfor %}
+          {% endif %}
+        </time>
       </p>
-    </li>
+    </div>
+    <hr />
   {% endfor %}
 </ul>
