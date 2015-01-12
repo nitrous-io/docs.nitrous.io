@@ -11,17 +11,15 @@ category: [ruby, rails, tutorials, getting-started]
 
 ## Create a Template
 
-[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Application** from the menu.
+[Login](https://pro.nitrous.io/#/login) to your Nitrous account and select **New > Workspace** from the menu.
 
-Name your application and select a size (for this example you can select Nano).
+Name your workspace, select a region near you, and select a VM size (for this example you can select Nano).
 
 Select the **Ruby on Rails** template and click **Create**. This will create a new Rails site with a preconfigured PostgreSQL database.
 
 ![Starter Template]({{site.baseurl}}/images/articles/getting-started/starter-template.png)
 
 ## Development
-
-The quickest way to start coding is to connect to the Web IDE.
 
 After creating a box template, click the **IDE** link found in the bottom right of your dashboard.
 
@@ -31,11 +29,11 @@ Within the IDE you will see a file browser, text editor, and a console. Your dev
 
 ## Preview Your App
 
-The Rails template comes with a app already available within `~/workspace/app` which you can preview immediately on port 3000.
+The Rails template comes with a app already available within `~/code/starter` which you can preview immediately on port 3000.
 
-Within the console, navigate into `~/workspace/app/` and run the app.
+Within the console, navigate into `~/code/starter/` and run the app.
 
-    $ cd ~/workspace/app
+    $ cd ~/code/starter
     $ rails server
 
 Once the app is running, preview the app by navigating to **Preview > Port 3000** within the IDE menu bar. Your new Rails app will open in a new window.
