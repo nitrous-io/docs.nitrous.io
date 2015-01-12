@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: How to Setup SSH Keys on Mac
-published: false
+published: true
 category: [ssh]
 ---
 # How to Setup SSH Keys on Mac
@@ -46,11 +46,9 @@ Next, [Login](https://www.nitrous.io/users/sign_in) to your Nitrous account and 
 
 ![Public Key Button]({{site.baseurl}}/images/articles/ssh/add-public-key-button.png)
 
-Next, add a name for the SSH key e.g. "AJ's MBA".  This is helpful to identify which machines you've given access to your  boxes, so make it descriptive.
+Next, paste your key into the "Key" field that you copied in section 2. of the article and click the "Add key".
 
-Then, paste your key into the "Key" field that you copied in section 2. of the article and click the "Add key".
-
-![Public Key Form](https://raw.github.com/action-io/action-assets/master/support/screenshots/public-key-form.png)
+![Public Key Form]({{site.baseurl}}/images/articles/ssh/public-key-form.png)
 
 ### 3. Make sure it works
 
@@ -58,21 +56,21 @@ To make sure everything works we'll now SSH into your box. You'll be asked to au
 
 Click the "[boxes](https://www.nitrous.io/app#/boxes)" link in the top navigation.  Then click any box you've created to expand its details:
 
-![Box Details](https://raw.github.com/action-io/action-assets/master/support/screenshots/box-details.png)
+![Box Details]({{site.baseurl}}/images/articles/ssh/box-details.png)
 
-Click the SSH URI link, it should look something like the link in the screenshot above.
+Click the SSH URL link as seen in the screenshot above.
 
 >Your browser will attempt to open a local terminal session. If there's a prompt which asks if you would like to allow the ssh connection, click "Allow".
 
 In your terminal, you might see something like this:
 
-    The authenticity of host '[apse1.nitrousbox.com]:10253    ([54.251.42.128]:10253)' can't be established.
+    The authenticity of host '[meteor-3918.nitrouspro.com]:49153    ([54.251.42.128]:49153)' can't be established.
     RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
     Are you sure you want to continue connecting (yes/no)? yes
 
 Don't worry, this is supposed to happen. Verify that the fingerprint matches the one here and type "yes". This will add your Nitrous box to your known_hosts ssh file.
 
-    Warning: Permanently added '[apse1.nitrousbox.com]:10253, [54.251.42.128]:10253' (RSA) to the list of known hosts.
+    Warning: Permanently added '[meteor-3918.nitrouspro.com]:49153, [54.251.42.128]:49153' (RSA) to the list of known hosts.
     Welcome to Nitrous (GNU/Linux 3.2.0-31-virtual x86_64)
 
 Now you've got your SSH keys setup so you can connect via Terminal and use Vim or Emacs to code!
